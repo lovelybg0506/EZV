@@ -258,7 +258,7 @@
 
 #header .navbar-nav.navbar-right >li a {
   color: #000;
-  font-size: 12px;
+  font-size: 25px;
   padding: 20px;
   text-transform: uppercase;
   font-weight: 300;
@@ -524,7 +524,7 @@ ul.sub-menu {
 
 #home-slider .slider-house {
   position: absolute;
-  right: 0;
+  right: 200px;
   bottom: 0;
 }
 
@@ -601,8 +601,8 @@ ul.sub-menu {
 
 #home-slider .slider-cycle {
   position: absolute;
-  right: 500px;
-  bottom: 0;
+  right: 400px;
+  bottom: -50px;
 }
 
 .animate-in .slider-cycle {
