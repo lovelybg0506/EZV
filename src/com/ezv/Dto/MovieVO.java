@@ -3,14 +3,15 @@ package com.ezv.Dto;
 public class MovieVO {
 	private int mno;
 	private String mname;
+	private String msubname;
 	private String mcontent;
 	private String mdirector;
 	private String mactor;
 	private String mgenre;
+	private String mtime;
 	private String mdate;
 	private String mgrade;
-	private String mimg;
-	private String mfilesize;
+	
 	public int getMno() {
 		return mno;
 	}
@@ -22,6 +23,12 @@ public class MovieVO {
 	}
 	public void setMname(String mname) {
 		this.mname = mname;
+	}
+	public String getMsubname() {
+		return msubname;
+	}
+	public void setMsubname(String msubname) {
+		this.msubname = msubname;
 	}
 	public String getMcontent() {
 		return mcontent;
@@ -47,6 +54,12 @@ public class MovieVO {
 	public void setMgenre(String mgenre) {
 		this.mgenre = mgenre;
 	}
+	public String getMtime() {
+		return mtime;
+	}
+	public void setMtime(String mtime) {
+		this.mtime = mtime;
+	}
 	public String getMdate() {
 		return mdate;
 	}
@@ -59,18 +72,4 @@ public class MovieVO {
 	public void setMgrade(String mgrade) {
 		this.mgrade = mgrade;
 	}
-	public String getMimg() {
-		return mimg;
-	}
-	public void setMimg(String mimg) {
-		this.mimg = mimg;
-	}
-	public String getMfilesize() {
-		return mfilesize;
-	}
-	public void setMfilesize(String mfilesize) {
-		this.mfilesize = mfilesize;
-	}
-	
-	
 }

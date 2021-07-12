@@ -35,10 +35,9 @@
         						<li><a href="../sign/MemberJoin.jsp">회원가입</a></li>
         					</c:if>
         					<c:if test="${loginUser.id!=null }">
-        						<li><a href="#">로그아웃</a></li>
-        						<li><a href="#">마이페이지</a></li>
+        						<li><a href="../sign/MemberLogout.jsp">로그아웃</a></li>
+        						<li><a href="../mypage/Mypage.jsp">마이페이지</a></li>
         					</c:if>
-                           		<li><a href="#">사이트이용안내</a></li>
                         </ul>
                     </div>
             	 </div>
@@ -58,7 +57,7 @@
                         <li class="dropdown"><a href="#1">예매 <i class="fa fa-angle-down"></i></a>
                             <ul role="menu" class="sub-menu">
                                 <li><a href="#1">빠른 예매</a></li>
-                                <li><a href="#">상영시간표</a></li>
+                                <li><a href="../movie/movie_time_day1.jsp">상영시간표</a></li>
                             </ul>
                         </li>
                       	<li class="dropdown"><a href="../theater/theater.jsp">극장 </a></li>                         
@@ -71,7 +70,15 @@
                             <li><a href="https://www.youtube.com/channel/UCSmmLUH4x14hzJNpLshJIGA" target="_blank"><i class="fa fa-youtube">&nbsp;&nbsp;&nbsp;&nbsp;YouTube</i></a></li>
                           </ul>
                           </li>
-                        <li class="dropdown"><a href="#">고객센터</a></li>                         
+                        <li class="dropdown"><a href="../service/service_main.jsp">고객센터<i class="fa fa-angle-down"></i></a>
+                        <ul role="menu" class="sub-menu">
+                                <li><a href="../service/service_notice.jsp">공지사항</a></li>
+                                <li><a href="../service/service_QnA.jsp">자주찾는질문</a></li>
+                                <li><a href="#">1:1 문의</a></li>
+                                <li><a href="#">분실물 문의</a></li>
+                            </ul>
+                        
+                        </li>                         
                     	</ul>
                     </div>
                </div>

@@ -79,23 +79,26 @@ h2{
 	<tr height = "50">
 		<td id="tdh"width = "150" align="center">이메일</td>
 		<td width = "350" align="center">
-			<input type="email" name="email" size="40" >
+			<input type="email" name="email" size="40" >           
 		</td>	
 	</tr>
 	
-	<tr height = "50">
+	<!-- <tr height = "50">
 		<td id="tdh"width = "150" align="center">권한</td>
 		<td width = "350" align="center">
 			<input type="radio" name="admin" value="A" >관리자&nbsp;
 			<input type="radio" name="admin" value="B" >일반회원&nbsp;
 		</td>	
 	
-	</tr>
+	</tr> -->
 	<tr height = "50">
 		<td id="tdh" width = "150" colspan= "2" align ="center">
-			<a href="../main/main.jsp"><button type="button" >회원가입</button></a>
+			<button type="submit" >회원가입</button>
 			<button type="reset">취소</button>
 		</td>	
+	</tr>
+	<tr>
+		<td colspan="2" align="center"><font color="red">${messagejoin}</font></td>
 	</tr>				
 </table>
 </form>
