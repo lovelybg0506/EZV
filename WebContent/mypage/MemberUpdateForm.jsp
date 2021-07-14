@@ -2,11 +2,18 @@
 <%@page import="com.ezv.Dao.MemberDAO"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@ include file="../main/header.jsp" %>
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="UTF-8">
 <title>MemberUpdateForm</title>
+<style>
+#tdh{
+	background-color:#FFF;
+	color:#A5732A;
+}
+</style>
 </head>
 <body>
 <%
@@ -48,8 +55,8 @@
 					<option value="011">011</option>
 					<option value="016">016</option>
 			</select>
-			<input type ="text" name="tel2" value="<%=mvo.getTel2() %>" size = 3>		
-			<input type ="text" name="tel3" value="<%=mvo.getTel3() %>" size = 3>
+			<input type ="text" name="tel2" value="<%=mvo.getTel2() %>" size = 5>		
+			<input type ="text" name="tel3" value="<%=mvo.getTel3() %>" size = 5>
 			</td>		
 		</tr>
 		
@@ -68,12 +75,15 @@
 		</tr>
 		
 		<tr height="50">
-			<td align="center" colspan="2">
+			<td align="center" colspan="2"  id="tdh">
 				<input type="hidden" name="id" value="<%=mvo.getId()%>">
-				<input type="submit" value="회원 수정하기">
+				<input type="submit" value="회원 수정">
+				<a href="pwdupdate.jsp">
+				<button type="button">비밀번호 수정</button></a>
 			</td>	
 	</table>
 	</form>
 </div>
+ <%@ include file="../main/footer.jsp" %>
 </body>
 </html>

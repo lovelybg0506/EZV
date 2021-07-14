@@ -16,19 +16,33 @@ h2{
 	color:#A5732A;
 }
 </style>
+<script type="text/javascript">
+function idCheck(id){
+	
+	if(id == ""){
+		window.alert("아이디를 입력하시오");
+		document.MemberJoin.id.focus();
+	}else{
+		url="IdCheck.jsp?id="+id;
+		window.open(url,"post","width=300, height=150");
+	}
+}
+</script>
 </head>
 <body>
 <div align="center">
 <h2>회원 가입</h2>
 <div align="center"><font color=red>* 표시된 항목은 필수 항목입니다.</font></div>
-<form action = "MemberJoinProc.jsp">
+<form action = "MemberJoinProc.jsp" id="MemberJoin" name="MemberJoin">
 	<table width="500" border="1">
 	<tr height = "50">
 		<td id="tdh" width = "150" align="center">아이디<font color=red>*</font></td>
 		<td width = "350" align="center">
-			<input type="text" name="id" size="40" placeholder="id를 넣으세요">
-		</td>
-	</tr>
+			<input type="text" name="id" size="27" placeholder="id를 넣으세요">
+			<input type="hidden" name="chk" size="20">
+			<input type="button" value="중복 체크" onclick="idCheck(this.form.id.value)">
+		</td>	
+	</tr>	
 	
 	<tr height = "50">
 		<td id="tdh" width = "150" align="center">패스워드<font color=red>*</font></td>
@@ -93,14 +107,12 @@ h2{
 	</tr> -->
 	<tr height = "50">
 		<td id="tdh" width = "150" colspan= "2" align ="center">
-			<button type="submit" >회원가입</button>
+			<button type="button" onclick="return joincheck" >회원가입</button>
 			<button type="reset">취소</button>
 		</td>	
 	</tr>
 	<tr>
-		<td colspan="2" align="center">
-		<font color="red">${messagejoin}</font>
-		</td>
+		<td colspan="2" align="center"><font color="red">${messagejoin}</font></td>
 	</tr>				
 </table>
 </form>

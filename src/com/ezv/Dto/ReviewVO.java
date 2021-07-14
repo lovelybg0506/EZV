@@ -3,11 +3,11 @@ package com.ezv.Dto;
 public class ReviewVO {
 	private int rno;
 	private String rid;
-	private String rmovie;
+	private int rmovie;
 	private String rcontent;
 	private String rdate;
 	private String rgrade;
-
+	
 	public int getRno() {
 		return rno;
 	}
@@ -20,10 +20,10 @@ public class ReviewVO {
 	public void setRid(String rid) {
 		this.rid = rid;
 	}
-	public String getRmovie() {
+	public int getRmovie() {
 		return rmovie;
 	}
-	public void setRmovie(String rmovie) {
+	public void setRmovie(int rmovie) {
 		this.rmovie = rmovie;
 	}
 	public String getRcontent() {

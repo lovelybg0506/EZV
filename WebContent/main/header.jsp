@@ -30,11 +30,11 @@
              <div class="row">
                  <div class="pull-right">
                         <ul class="nav nav-pills">
-                         	<c:if test="${loginUser.id==null }">
+                         	<c:if test="${loginUser==null }">
         						<li><a href="../sign/MemberLogin.jsp">로그인</a></li>
         						<li><a href="../sign/MemberJoin.jsp">회원가입</a></li>
         					</c:if>
-        					<c:if test="${loginUser.id!=null }">
+        					<c:if test="${loginUser!=null }">
         						<li><a href="../sign/MemberLogout.jsp">로그아웃</a></li>
         						<li><a href="../mypage/Mypage.jsp">마이페이지</a></li>
         					</c:if>
@@ -61,7 +61,7 @@
                             </ul>
                         </li>
                       	<li class="dropdown"><a href="../theater/theater.jsp">극장 </a></li>                         
-                        <li class="dropdown"><a href="#">이벤트</a></li>                         
+                        <li class="dropdown"><a href="../event/eventmain.jsp">이벤트</a></li>                         
                         <li class="dropdown"><a href="#">SNS <i class="fa fa-angle-down"></i></a>  
                           <ul role="menu" class="sub-menu">
                             <li><a href="https://www.facebook.com/ezenac.co.kr/" target="_blank"><i class="fa fa-facebook">&nbsp;&nbsp;&nbsp;&nbsp;Facebook</i></a></li>

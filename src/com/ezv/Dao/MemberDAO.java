@@ -282,4 +282,68 @@ public class MemberDAO {
 		}
 		return x;
 	}
+	
+	public boolean checkId(String id) {
+		boolean check = false;
+		
+		Connection conn = null;
+		PreparedStatement pstmt = null;
+		ResultSet rs = null;
+		
+		String sql = "select id from EZV_member where id=?";
+		
+		try {
+			conn = getConnection();
+			pstmt = conn.prepareStatement(sql);
+			pstmt.setString(1, id);
+			rs = pstmt.executeQuery();
+			
+			check = rs.next();
+			
+		}catch(Exception e) {
+			e.printStackTrace();
+		}finally {
+			try {
+				if (pstmt != null)
+					pstmt.close();
+				if (conn != null)
+					conn.close();
+			} catch (Exception e) {
+				e.printStackTrace();
+			}
+		}
+		return check;
+	}
+	
+	public void changePw(MemberVO mvo) {
+		Connection conn = null;
+		PreparedStatement pstmt= null;
+		String sql = "update EZV_member set pwd1=? where id=?";
+		
+		try {
+			conn = getConnection();
+			pstmt = conn.prepareStatement(sql);
+			
+			pstmt.setString(1, mvo.getPwd1());
+			pstmt.setString(2, mvo.getId());
+//					
+			pstmt.executeUpdate();
+			
+		}catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+		
 }
+
+
+
+
+
+
+
+
+
+
+
+

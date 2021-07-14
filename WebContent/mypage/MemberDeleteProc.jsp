@@ -24,8 +24,12 @@
 		
 		if(check==1){
 			session.invalidate();
-			response.sendRedirect("../main/main.jsp");
+			
 	%>
+		<script>
+			window.alert("회원탈퇴되었습니다");
+			document.location.href="../main/main.jsp";
+		</script>
 	<%
 		}else{
 	%>

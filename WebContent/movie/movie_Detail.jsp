@@ -1,9 +1,11 @@
+<%@page import="com.ezv.Dto.MemberVO"%>
 <%@page import="com.ezv.Dto.ReviewVO"%>
 <%@page import="com.ezv.Dto.MovieVO"%>
 <%@page import="java.util.Vector"%>
 <%@page import="com.ezv.Dao.MovieDAO"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <%@ include file="../main/header.jsp"%>
 <!DOCTYPE html>
 <html>
@@ -19,77 +21,17 @@
 }
 </style>
 <head>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
-<script>
-	$(document).ready(function() {
-
-		loadReview();
-	});
-
-	// 리뷰 불러오는 함수
-	function loadReview() {
-		$.ajax({
-			type : "post",
-			url : "/EZV/reviewlist.do",
-			dataType : "json",
-			data : {"no" : 5},
-			success : function(data) {
-				var Rlist = data.list;
-				for (var i = 0; i < Rlist.length; i++) {
-					$(".page-header").append(
-
-							"<blockquote style='margin-top:30px;'>"
-							+ "<footer>"+ Rlist[i].rid+ "</footer><br>"
-							+ "<p>"+ Rlist[i].rcontent + "</p>"
-							+ "<div style='text-align:right;'><h6>"+ Rlist[i].rdate + "</h6></div>"
-							+ "</blockquote>"
-					);
-
-				}
-
-			},
-			error : function(request, status, error) {
-				alert("error!!!");
-			}
-		});
-	}
-	
-	/*  리뷰 등록 함수
-	$("#add_btn").click(function(){
-		// 입력값 유효성검사
-		var content=$("#rev_content").val();
-		if(content==""){
-			$("#rev_content").html("내용을 입력하세요.");
-			$("#rev_content").focus();
-			return;
-		}
-		
-		// 입력태그 초기화
-		$("#rev_content").val("");
-		
-		//ajax기능으로 요청,응답
-		$.ajax({
-			type:"post",
-			url:"/EZV/insert.do",
-			data:"&rev_content="+rev_content,
-			dataType:"json",
-			success:function(data){
-				
-				if(=="success"){
-
-				}
-			},
-			error: function(request,status,error){
-		          alert("error!!!");
-			}
-		});
-	}); */
-</script>
-
 </head>
 <body>
 	<%
-		MovieVO mvo = (MovieVO)request.getAttribute("info");
+		System.out.println(request.getParameter("mno"));
+	
+		int mno=Integer.parseInt(request.getParameter("mno"));
+		
+		MovieDAO m = new MovieDAO();
+		MovieVO mvo = m.MovieCont(mno);
+		Vector<ReviewVO> rev = m.Review(mno);
+
 	%>
 	<section id="page-breadcrumb">
 		<div class="vertical-center sun">
@@ -113,18 +55,15 @@
 					<ul class="portfolio-filter text-center">
 						<li><a class="btn btn-default" href="../movie/movie_list.jsp"
 							data-filter=".logos">영화리스트</a></li>
-						<li><a class="btn btn-default active"
-							href="../movie/movie_detail_harry.jsp" data-filter="*">주요정보</a></li>
 						<li><a class="btn btn-default" href="movie_time_day1.jsp"
 							data-filter=".logos">상영시간표</a></li>
 					</ul>
-					<!--/#portfolio-filter-->
+
 					<div class="col-sm-3">
 						<!-- col-sm-3으로 하면 글씨랑 사진 딱 붙음 -->
-						<img src="../movie/images/harry.jpg" style="height: 350px;"
+						<img src="<%=mvo.getMposter() %>" style="height: 350px;"
 							class="img-responsive" alt="">
 					</div>
-					
 					<div class="col-sm-6">
 						<div class="project-name overflow">
 							<h2 class="bold"><%=mvo.getMname()%></h2>
@@ -169,11 +108,11 @@
 						<div id="video-container">
 							<div class="row">
 								<div class="col-md-6">
-									<iframe src="https://www.youtube.com/embed/5hU0EeBQEZY"
+									<iframe src="https://www.youtube.com/embed/<%=mvo.getMvideo1() %>"
 										style="height: 300px; width: 400px;"></iframe>
 								</div>
 								<div class="col-md-6">
-									<iframe src="https://www.youtube.com/embed/vtJ6eZRanHc"
+									<iframe src="https://www.youtube.com/embed/<%=mvo.getMvideo2() %>"
 										style="height: 300px; width: 400px;"></iframe>
 								</div>
 							</div>
@@ -200,16 +139,16 @@
 							</ol>
 							<div class="carousel-inner">
 								<div class="item active">
-									<img src="../movie/images/harry_cut1.jpg"
+									<img src="<%=mvo.getMimg1() %>"
 										style="width: 1140px; height: 487px;" alt="">
 								</div>
 								<div class="item">
-									<img src="../movie/images/harry_cut2.jpg"
+									<img src="<%=mvo.getMimg2() %>"
 										style="width: 1140px; height: 487px;" alt="">
 									<div class="carousel-caption"></div>
 								</div>
 								<div class="item">
-									<img src="../movie/images/harry_cut3.jpg"
+									<img src="<%=mvo.getMimg3() %>"
 										style="width: 1140px; height: 487px;" alt="">
 									<div class="carousel-caption"></div>
 								</div>
@@ -228,52 +167,82 @@
 				</div>
 			</div>
 
-			<!-- 리뷰 작성 칸 -->
-			
-			<form action="<%=request.getContextPath()%>/insert.do" method="post">
-				
-				<input type="hidden" value="<%=mvo.getMno() %>" name="mno">
-				<input type="hidden" value="admin" name="id">				
-				<div class="row3">
-					<div align="left" class="row2"
-						style="margin: 0; padding-right: 250px;">
-						<hr>
-						<div class="col-md-8" style="height: 120px; width: 880px;">
-							<div class="contact-form bottom">
-								<h2>리뷰</h2>
-								<div class="form-group">
-									<textarea name="rev_content" class="form-control" rows="4" placeholder="<%=mvo.getMname() %> 재미있게 보셨나요? 영화의 어떤 점이 좋았는지 이야기해주세요."></textarea>
-								</div>
-								<div class="form-group" style="width: 100px; float: right;">
-									<input type="submit" id="add_btn" value="리뷰등록" class="btn btn-submit">
-								</div>
+	<!-- 리뷰 작성 칸 -->
+			<form action="../movie/Review_Proc.jsp" method="post">
+			<input type="hidden" name="rmovie" value="<%=mvo.getMno() %>">
+			<input type="hidden" name="rid" value="홍길동">
+			<div class="row3">
+				<div align="left" class="row2" style="margin: 0; padding-right: 250px;">
+					<hr>
+					<div class="col-md-8" style="height: 120px; width: 880px;">
+						<div class="contact-form bottom">
+							<h2>리뷰</h2>
+							<input type="hidden" name="rmovie" value="5">
+							
+							<select name="rgrade">
+							<option value="none">==별점선택==</option>				
+							<option value="1">★☆☆☆☆</option>		
+							<option value="2">★★☆☆☆</option>
+							<option value="3">★★★☆☆</option>
+							<option value="4">★★★★☆</option>
+							<option value="5">★★★★★</option>
+							</select>
+							<div class="form-group">
+								<textarea name="rcontent" class="form-control" rows="4" placeholder=" 재미있게 보셨나요? 영화의 어떤 점이 좋았는지 이야기해주세요."></textarea>
+							</div>
+
 							</div>
 						</div>
 					</div>
 				</div>
+							<input type="reset" value="취소" class="btn btn-submit" style="width: 100px; float: right;">
+							<input type="submit" value="등록" class="btn btn-submit" style="margin-right:30px; width: 100px; float: right;">
 			</form>
-			<!--  -->
 
 			<!-- 리뷰 목록 -->
 			<div class="row3">
-				<div align="left" class="row2"
-					style="margin: 0; padding-right: 250px;">
+				<div align="left" class="row2" style="margin: 0; padding-right: 250px;">
+				<hr>
 					<div class="comment-row">
-						<div class="col-md-6">
+						<div class="col-md-12">
 							<h4 class="page-header" style="padding-top: 80px;">
 								<strong><%=mvo.getMname()%></strong>에 대한 리뷰입니다!
 							</h4>
-							<!-- JSON -->
-
-							<!-- JSON -->
+							<!-- 리뷰 내용 -->
+							<div style="text-align: left">
+							<%
+								for (int j = 0; j < rev.size(); j++) {
+									ReviewVO rvo = rev.get(j);
+									
+							%>
+								<img src="./movie/images/user.png">&nbsp;&nbsp;<%=rvo.getRid()%><br>
+								<br>
+								<p><%=rvo.getRcontent()%></p>
+								<h6 style="text-align: right">
+									<%=rvo.getRdate()%>
+								</h6>
+								<%-- <c:if test="${loginUser.id != null && loginUser.id == rvo.rid}"> --%>
+								<h5 style="text-align: right">
+									<button type=button onclick="location.href='Review_UpdateForm.jsp?rno=<%=rvo.getRno()%>'">수정</button>
+									<button type=button>삭제</button>
+								</h5>
+<%-- 								</c:if> --%>
+								<c:if test="${loginUser.id=='admin'}">
+								<h5 style="text-align: right">
+									<button type=button>삭제</button>
+								</h5>
+								</c:if>
+							<hr>
+							<%
+									}
+								
+							%> 
+							</div>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-		
-		<!--  -->
-
 	</section>
 	<!--/#portfolio-information-->
 	<%@ include file="../main/footer.jsp"%>

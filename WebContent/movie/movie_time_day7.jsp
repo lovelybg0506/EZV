@@ -71,6 +71,7 @@
 						<li><i class="fa fa-angle-right"></i>
 						<b>&nbsp;2D&nbsp;&nbsp;|&nbsp;&nbsp;1관&nbsp;&nbsp;|&nbsp;&nbsp;4F</b><br>
 						</li>
+					
 					</ul>
 					<ul>
 						<li>
@@ -80,7 +81,7 @@
 							<img src="../movie/images/sun.png" style="height:20px;  align:center;"><b>&nbsp; &nbsp;|&nbsp; &nbsp;</b>
 							<b style="align:center;">13:00&nbsp; &nbsp;|&nbsp; &nbsp;</b>
 							<b style="align:center;">16:30&nbsp; &nbsp;|&nbsp; &nbsp;</b>
-							<b style="align:center;">20:00&nbsp; &nbsp;|앰뒤졌나 &nbsp;</b>
+							<b style="align:center;">20:00&nbsp; &nbsp;|&nbsp; &nbsp;</b>
 							<b style="align:center;">23:30</b>
 						</li>
 					</ul>

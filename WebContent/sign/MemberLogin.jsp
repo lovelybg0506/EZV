@@ -46,6 +46,7 @@ function loginCheck(){
 			<td><input type="password" id="pwd1" name="pwd1"></input></td>
 		</tr>
 		
+		
 		<!-- <tr>
 			<td></td>
 			<td><input type="radio" name="admin" value="A">관리자&nbsp;
@@ -53,9 +54,9 @@ function loginCheck(){
 		</tr> -->
 		
 		<tr>
-			<td id="tdh" colspan="2" align="center">
+			<td id="tdh" colspan="2" align="center"><br>
 <!-- 		<button type="submit">로그인</button>&nbsp;&nbsp; -->
- 			<input type="button" value="로그인" onclick="loginCheck();"></input>			
+ 			<input type="button" value="로그인" onclick="loginCheck();"></input>		
 <!--  		<button type="reset">취소</button>&nbsp;&nbsp; -->
  			<input type="reset" value="취소"></input> 
  			<a href="MemberJoin.jsp"><button type="button" >회원가입</button></a>
@@ -64,7 +65,7 @@ function loginCheck(){
 	</table>
 </form>
 <div align="center" style="color:red;">${message}</div>
-<div align="center" style="color:red;">${messagejoin}</div>
+<div align="center" style="color:blue;">${messagejoin}</div>
 <%@ include file="../main/footer.jsp" %>
 </body>
 </html>

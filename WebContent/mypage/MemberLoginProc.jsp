@@ -30,8 +30,9 @@
 		HttpSession Session = request.getSession(); //홈페이지가 종료 될때까지는 유지
 		
 		session.setAttribute("loginUser", mvo);
+		session.setAttribute("id", id);
+		session.setAttribute("pwd1", pwd1);
 		session.setAttribute("result", result);
-		session.setAttribute("id",id);
 		
 		url = "../main/main.jsp";
 	}else {

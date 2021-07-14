@@ -1,4 +1,3 @@
-
 <%@page import="com.ezv.Dto.SBoardBean"%>
 <%@page import="com.ezv.Dao.SBoardDAO"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
