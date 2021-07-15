@@ -107,7 +107,7 @@ function idCheck(id){
 	</tr> -->
 	<tr height = "50">
 		<td id="tdh" width = "150" colspan= "2" align ="center">
-			<button type="button" onclick="return joincheck" >회원가입</button>
+			<button type="submit" onclick="return joincheck" >회원가입</button>
 			<button type="reset">취소</button>
 		</td>	
 	</tr>

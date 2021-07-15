@@ -27,7 +27,7 @@
 	if(result == 2 || result == 3) {
 		mvo=mbao.getMember(id);
 		
-		HttpSession Session = request.getSession(); //홈페이지가 종료 될때까지는 유지
+		HttpSession Session = request.getSession(true); //홈페이지가 종료 될때까지는 유지
 		
 		session.setAttribute("loginUser", mvo);
 		session.setAttribute("id", id);
@@ -47,6 +47,7 @@
 	}
 	RequestDispatcher dispatcher=request.getRequestDispatcher(url);
 	dispatcher.forward(request, response);	
+
 %>
 </body>
 </html>

@@ -47,14 +47,15 @@
 						type="password"></td>
 				</tr>
 				<tr height="50" border="1" align="center">
-					<td align="center" width="250">확인</td>
+					<td align
+					="center" width="250">확인</td>
 					<td width="250"><input id="change_pw_check"
 						name="change_pw_check" type="password"></td>
 				</tr>
 				<tr height="50">
 					<td align="center" colspan="2">
 						<input type="button" value="비밀번호수정" onclick="input_check();">
-						<input type="reset" value="리셋"></td>
+						<input type="reset" value="취소"></td>
 				</tr>
 			</table>
 		</form>

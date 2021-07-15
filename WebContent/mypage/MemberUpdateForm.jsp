@@ -78,8 +78,7 @@
 			<td align="center" colspan="2"  id="tdh">
 				<input type="hidden" name="id" value="<%=mvo.getId()%>">
 				<input type="submit" value="회원 수정">
-				<a href="pwdupdate.jsp">
-				<button type="button">비밀번호 수정</button></a>
+				<a href="../mypage/pwdupdate.jsp"><button type="button">비밀번호 수정</button></a>
 			</td>	
 	</table>
 	</form>

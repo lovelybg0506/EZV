@@ -25,7 +25,7 @@
 		} else if (pwd1.value == "") {
 			window.alert("암호를 입력하세요");
 		} else {
-			document.MemberLogin.action = "../sign/MemberLoginProc.jsp"
+			document.MemberLogin.action = "../mypage/MemberLoginProc.jsp"
 
 			document.MemberLogin.submit();
 		}
@@ -34,7 +34,7 @@
 </head>
 <body>
 	<h2 align="center">로그인</h2>
-	<form action="../sign/MemberLoginProc.jsp" id="MemberLogin"
+	<form action="MemberLoginProc.jsp" id="MemberLogin"
 		name="MemberLogin" onsubmit="loginCheck();">
 		<table align="center">
 			<tr>
