@@ -34,7 +34,7 @@ public class MovieDAO {
 
 		try {
 			getcon();
-			String sql = "select * from ezv_movie";
+			String sql = "select * from ezv_movie order by mposter ASC";
 			pstmt = conn.prepareStatement(sql);
 			rs = pstmt.executeQuery();
 
@@ -69,6 +69,7 @@ public class MovieDAO {
 		return v;
 	}
 
+	// 영화 번호대로 detail에서 리뷰, 정보 가져오기
 	public MovieVO MovieCont(int mno) {
 		MovieVO mbean = new MovieVO();
 		
@@ -108,6 +109,7 @@ public class MovieDAO {
 		return mbean;
 	}
 	
+	// 영화리스트에서 포스터/영화이름/예매율/개봉일
 	public int MovieCount() {
 		int count = 0;
 
@@ -128,6 +130,7 @@ public class MovieDAO {
 		return count;
 	}
 	
+	// 리뷰 추가
 	public int reviewInsert(ReviewVO rvo) {
 		int result = 0;
 			try {
@@ -148,9 +151,6 @@ public class MovieDAO {
 			}
 			return result;
 	}
-	
-	
-	
 	
 	// 리뷰 목록
 	public Vector<ReviewVO> Review(int no) {
@@ -181,28 +181,7 @@ public class MovieDAO {
 
 	}
 
-	// 영화 리뷰 입력하기
-	public void InsertMovieReview(ReviewVO vo) {
-		getcon();
-		int rno = 0;
-
-		try {
-			String rnosql = "insert into ezv_review values(?,review_seq.nextval,?,?,?)";
-			pstmt = conn.prepareStatement(rnosql);
-
-			pstmt.setString(1, vo.getRid());
-			pstmt.setString(2, vo.getRdate());
-			pstmt.setString(3, vo.getRcontent());
-			
-
-			pstmt.executeUpdate();
-			conn.close();
-
-		} catch (Exception e) {
-			e.printStackTrace();
-		}
-	}
-
+	// 리뷰 전체 가져오기
 	public ReviewVO getReviewCont(int rno) {
 		ReviewVO rvo = new ReviewVO();
 		getcon();
@@ -231,15 +210,15 @@ public class MovieDAO {
 	// 영화 리뷰 수정
 	public void UpdateMovieReview(ReviewVO vo) {
 		getcon();
-		//rgrade=?
+		
 		try {
-			String sql = "update ezv_review set rcontent=?, rdate=SYSDATE where rno=?";
+			String sql = "update ezv_review set rcontent=?, rdate=SYSDATE, rgrade=? where rno=?";
 		
 			pstmt = conn.prepareStatement(sql);
 			
 			pstmt.setString(1, vo.getRcontent());
-			//pstmt.setString(2, vo.getRgrade());
-			pstmt.setInt(2, vo.getRno());
+			pstmt.setString(2, vo.getRgrade());
+			pstmt.setInt(3, vo.getRno());
 
 			pstmt.executeUpdate();
 			conn.close();
@@ -248,7 +227,7 @@ public class MovieDAO {
 			e.printStackTrace();
 		}
 	}
-
+/*
 	// 선택한 리뷰 가져오기
 	public ReviewVO getOneUpdateReview(String rid) {
 		ReviewVO rvo = new ReviewVO();
@@ -274,9 +253,9 @@ public class MovieDAO {
 		}
 		return rvo;
 	}
-
+*/
 	// 영화 리뷰 삭제
-	public void DelteMovieReview(int rno) {
+	public void DelteMovieReview(ReviewVO vo) {
 		getcon();
 
 		try {
@@ -285,7 +264,7 @@ public class MovieDAO {
 			// 쿼리 실행할 객체 선언
 			pstmt = conn.prepareStatement(sql);
 			// ?
-			pstmt.setInt(1, rno);
+			pstmt.setInt(1, vo.getRno());
 			// 쿼리 실행
 			pstmt.executeUpdate();
 			// 자원 반납

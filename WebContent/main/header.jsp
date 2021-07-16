@@ -31,11 +31,11 @@
                  <div class="pull-right">
                         <ul class="nav nav-pills">
                          	<c:if test="${loginUser==null }">
-        						<li><a href="../sign/MemberLogin.jsp">로그인</a></li>
-        						<li><a href="../sign/MemberJoin.jsp">회원가입</a></li>
+        						<li><a href="../mypage/MemberLogin.jsp">로그인</a></li>
+        						<li><a href="../mypage/MemberJoin.jsp">회원가입</a></li>
         					</c:if>
         					<c:if test="${loginUser!=null }">
-        						<li><a href="../sign/MemberLogout.jsp">로그아웃</a></li>
+        						<li><a href="../mypage/MemberLogout.jsp">로그아웃</a></li>
         						<li><a href="../mypage/Mypage.jsp">마이페이지</a></li>
         					</c:if>
                         </ul>

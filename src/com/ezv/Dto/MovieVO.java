@@ -2,8 +2,8 @@ package com.ezv.Dto;
 
 public class MovieVO {
 	private int mno;
-	private String mposter;
 	private String mname;
+	private String mposter;
 	private String msubname;
 	private String mcontent;
 	private String mdirector;
@@ -15,9 +15,8 @@ public class MovieVO {
 	private String mimg2;
 	private String mimg3;
 	private String mvideo1;
-	private String mvideo2;	
+	private String mvideo2;
 	private String mgrade;
-	
 	
 	public int getMno() {
 		return mno;
@@ -25,17 +24,17 @@ public class MovieVO {
 	public void setMno(int mno) {
 		this.mno = mno;
 	}
-	public String getMposter() {
-		return mposter;
-	}
-	public void setMposter(String mposter) {
-		this.mposter = mposter;
-	}
 	public String getMname() {
 		return mname;
 	}
 	public void setMname(String mname) {
 		this.mname = mname;
+	}
+	public String getMposter() {
+		return mposter;
+	}
+	public void setMposter(String mposter) {
+		this.mposter = mposter;
 	}
 	public String getMsubname() {
 		return msubname;
@@ -115,7 +114,7 @@ public class MovieVO {
 	public void setMgrade(String mgrade) {
 		this.mgrade = mgrade;
 	}
-
 	
-
+	
+	
 }

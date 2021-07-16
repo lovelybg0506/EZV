@@ -8,7 +8,6 @@
 <title>login</title>
 <style>
 #tdh, h2 {
-	background-color: #FFF;
 	color: #A5732A;
 }
 </style>

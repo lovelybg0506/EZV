@@ -31,7 +31,7 @@
 	}else{
 %>
 <script type="text/javascript">
-	alert("패스워드가 맞지 않습니다. 다시 확인해 주세요")
+	alert("패스워드가 맞지 않습니다. 다시 확인해 주세요!!!!")
 	history.go(-1);
 </script>
 <%

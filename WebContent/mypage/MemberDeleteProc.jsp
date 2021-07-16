@@ -27,7 +27,7 @@
 			
 	%>
 		<script>
-			window.alert("회원탈퇴되었습니다");
+			window.alert("회원 탈퇴 되었습니다");
 			document.location.href="../main/main.jsp";
 		</script>
 	<%

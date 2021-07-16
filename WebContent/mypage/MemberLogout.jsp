@@ -13,7 +13,7 @@
 	session.invalidate(); 
 %>
 <script>
-	window.alert("로그아웃되었습니다");
+	window.alert("로그아웃 되었습니다");
 	document.location.href="../main/main.jsp";
 </script>
 <%@ include file="../main/footer.jsp" %>

@@ -37,11 +37,11 @@
 		url = "../main/main.jsp";
 	}else {
 		if(result == 1) {
-			request.setAttribute("message", "로그인 실패: 레벨 불일치");
+			request.setAttribute("message", "로그인 실패 : 레벨 불일치");
 		}else if(result == 0) {
-			request.setAttribute("message", "로그인 실패: 비밀번호 불일치");
+			request.setAttribute("message", "로그인 실패 : 비밀번호 불일치");
 		}else {
-			request.setAttribute("message", "로그인 실패: 아이디 불일치");
+			request.setAttribute("message", "로그인 실패 : 아이디 불일치");
 		}
 		url="MemberLogin.jsp";
 	}

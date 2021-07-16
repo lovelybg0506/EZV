@@ -18,11 +18,11 @@
 <b><%=id %></b>
 <%
 	if(check){
-		out.println("는 이미 존재하는 아이디입니다.<p>");
+		out.println("는"+ "<font color='red'>" + " 이미 존재하는 아이디입니다.<p></font>");
 	}else{
-		out.println("는 사용가능한 아이디입니다.<p>");
+		out.println("는"+ "<font color='blue'>" + " 사용가능한 아이디입니다.<p>");
 	}
 %>
-<a href="#" onclick="self.close()">닫기</a>
+<a href="#" onclick="self.close()"><font color="A5732A">닫기</font></a>
 </body>
 </html>

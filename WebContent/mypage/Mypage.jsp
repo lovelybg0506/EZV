@@ -8,6 +8,11 @@
 <head>
 <meta charset="UTF-8">
 <title>Mypage</title>
+<style>
+h2,#tdh{
+	color:#A5732A;
+}
+</style>
 </head>
 <body>
 <%
@@ -17,37 +22,38 @@
 		<h2>회원 정보</h2>
 		<table width="400" border="1">
 			<tr height="50">
-				<td align="center" width="150">아이디</td>
-				<td width="250">${loginUser.getId()}</td>
+				<td id="tdh" align="center" width="150">아이디</td>
+				<td width="250">&nbsp;${loginUser.getId()}</td>
+			</tr>
+			<tr   height="50">
+				<td id="tdh" align="center" width="150">이름</td>
+				<td width="250">&nbsp;${loginUser.getName()}</td>
+			</tr>
+			<tr  height="50">
+				<td id="tdh"  align="center" width="150">나이</td>
+				<td width="250">&nbsp;${loginUser.getAge()}</td>
+			</tr>
+			<tr  height="50">
+				<td id="tdh"  align="center" width="150">성별</td>
+				<td width="250">&nbsp;${loginUser.getGender()}</td>
+			</tr>
+			<tr  height="50">
+				<td id="tdh"  align="center" width="150">전화번호</td>
+				<td width="250">&nbsp;${loginUser.getTel1()}&nbsp;-&nbsp;${loginUser.getTel2()}&nbsp;-&nbsp;${loginUser.getTel3()}</td>
 			</tr>
 			<tr height="50">
-				<td align="center" width="150">이름</td>
-				<td width="250">${loginUser.getName()}</td>
-			</tr>
-			<tr height="50">
-				<td align="center" width="150">나이</td>
-				<td width="250">${loginUser.getAge()}</td>
-			</tr>
-			<tr height="50">
-				<td align="center" width="150">성별</td>
-				<td width="250">${loginUser.getGender()}</td>
-			</tr>
-			<tr height="50">
-				<td align="center" width="150">전화번호</td>
-				<td width="250">${loginUser.getTel1()} ${loginUser.getTel2()}
-					${loginUser.getTel3()}</td>
-			</tr>
-			<tr height="50">
-				<td align="center" width="150">이메일</td>
-				<td width="250">${loginUser.getEmail()}</td>
+				<td id="tdh"  align="center" width="150">이메일</td>
+				<td width="250">&nbsp;${loginUser.getEmail()}</td>
 			</tr>
 
-			<tr height="50">
+			<tr id="tdh" height="50">
 				<td align="center" colspan="2">
 					<button type="button"
-						onclick="location.href ='MemberUpdateForm.jsp?id=${loginUser.getId()}'">회원수정</button>
+						onclick="location.href ='MemberUpdateForm.jsp?id=${loginUser.getId()}'">회원 수정</button>
 					<button type="button"
-						onclick="location.href ='MemberDeleteForm.jsp?id=${loginUser.getId()}'">회원탈퇴</button>
+						onclick="location.href ='MemberDeleteForm.jsp?id=${loginUser.getId()}'">회원 탈퇴</button>
+					<button type="button"
+						onclick="location.href ='#'">예매 정보 보기</button>
 				</td>
 			</tr>
 		</table>
