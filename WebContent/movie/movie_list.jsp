@@ -3,7 +3,6 @@
 <%@page import="com.ezv.Dao.MovieDAO"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ include file="../main/header.jsp"%>
 <!DOCTYPE html>
 <html>
@@ -56,7 +55,6 @@
                                     <div class="portfolio-view">
                                         <ul class="nav nav-pills">
                                         	<li><button type="button" class="btn btn-sm" onclick ="location.href='../movie/movie_Detail.jsp?mno=<%=mlist.get(i).getMno()%>'">상세보기</button></li><br><br>
-                                        	<li><button type="button" class="btn btn-sm">예매하기</button></li>
                                         </ul>
                                     </div>
                                 </div>

@@ -1,6 +1,6 @@
-<%@page import="com.ezv.Dto.SBoardBean"%>
+<%@page import="com.ezv.Dto.QBoardBean"%>
 <%@page import="java.util.Vector"%>
-<%@page import="com.ezv.Dao.SBoardDAO"%>
+<%@page import="com.ezv.Dao.QBoardDAO"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
@@ -8,8 +8,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="UTF-8">
-<title>Insert title here</title>
+<meta charset=UTF-8">
+<title>service_question</title>
 <style>
 .left-box {
   float: left;
@@ -20,10 +20,9 @@
 .line {
 border-bottom:1px solid #ececec;
 }
-.click:hover{
-	 background-color:#FFF;
-  	 color:#A5732A;
-  	 cursor:pointer;
+
+.bebigger{
+overflow:scroll;
 }
 h3{
 	padding-top:27px;
@@ -37,8 +36,8 @@ h3{
                 <div class="row">
                     <div class="action">
                         <div class="col-sm-12">
-                            <h1 class="title">공지사항</h1>
-                            <p>EZV의 주요한 이슈 및 여러가지 소식들을 확인하실 수 있습니다.</p>
+                            <h1 class="title">1 : 1 문의</h1>
+                            <p>EZV에게 무언가 문의할 일이 생기신다면!<hr>요기에 문의해 주세요~ </p>
                         </div>
                     </div>
                 </div>
@@ -55,14 +54,12 @@ h3{
                          <div class="col-sm-12 col-md-12">
                             <div class="single-blog single-column">
                                 <div class="overflow">
-                                    <h2 class="page-header">공지사항</h2>
+                                    <h2 class="page-header">1 : 1 문의</h2>
+                                    
 					            <%
 					                int pageSize=10;   
 					                
-					            	request.setCharacterEncoding("UTF-8");
-					            	
 					                String pageNum=request.getParameter("pageNum");
-					                String sc=request.getParameter("search");
 					                
 					                if(pageNum ==null){
 					                   pageNum="1";
@@ -72,52 +69,67 @@ h3{
 					                int number=0;
 					                int currentPage=Integer.parseInt(pageNum);
 					                
-					                SBoardDAO bdao=new SBoardDAO();
+					                QBoardDAO bdao=new QBoardDAO();
+					                QBoardBean board=new QBoardBean();
+					                Integer result=(Integer)session.getAttribute("result");
 					                
-					                count=bdao.getSearchCount(sc); 
+					                Vector<QBoardBean> vec = new Vector<QBoardBean>();
+					         if(result != null){
+					        	 if(result == 2){
+					                count=bdao.getAllCount();
 					                
 					                int startRow=(currentPage-1)*pageSize+1;
 					                int endRow=currentPage*pageSize;
 					                
-					                Vector<SBoardBean> vec=bdao.getSearchBoard(sc, startRow, endRow);
+					                vec=bdao.getAllBoard(startRow, endRow);
+					        	 }else{
+					        		String id=(String)session.getAttribute("id");
+					                count=bdao.ugetAllCount(id);
 					                
+					                int startRow=(currentPage-1)*pageSize+1;
+					                int endRow=currentPage*pageSize;
+						                
+						                vec=bdao.ugetAllBoard(id, startRow, endRow);
+					        	 }
+					         }else{
+					        	String id=null;
+				                count=bdao.ugetAllCount(id);
+				                
+				                int startRow=(currentPage-1)*pageSize+1;
+				                int endRow=currentPage*pageSize;
+				                
+				                vec=bdao.ugetAllBoard(id, startRow, endRow);
+					         }
 					                number=count-(currentPage-1)*pageSize;
+					       
 					           	%>
-					           		<div class="left-box">
-					           			<div class="search">
-						                    <form action="service_search.jsp">
-						                        <i class="fa fa-search"></i>
-						                        <div class="field-toggle">
-						                            <input type="text" class="search-form" autocomplete="off" placeholder="제목 + 내용 검색" name="search">
-						                        </div>
-						                    </form>
-						                </div>
-					           		</div>
 					           		<div class="left-box">전체 <%=count %>건</div>
-                                    <c:if test="${result == 2 }">
-                                    	<div class="right-box"><a href="sboardWriteForm.jsp">글쓰기</a></div>
+                                    <c:if test="${result == 3 }">
+                                    	<div class="right-box"><a href="qboardWriteForm.jsp">글쓰기</a></div>
                                     </c:if>
                                     <br><br>
 					                <form>
 					                	<table width="800" class="line">
 					                		<tr class="line">
 					                			<td width="50" align="center" ><b>번호</b></td>
-					                			<td width="100" align="center"><b>극장</b></td>
-					                			<td width="75" align="center"><b>구분</b></td>
+					                			<td width="75" align="center"><b>장소</b></td>
+					                			<td width="75" align="center"><b>아이디</b></td>
+					                			<td width="75" align="center"><b>분류</b></td>
 					                			<td width="400" align="center"><b>제목</b></td>
 					                			<td width="150" align="center"><b>등록일</b></td>
 					                		</tr>
 					                		
 					            <%
 							        for(int i=0;i<vec.size();i++){
-							            SBoardBean bean=vec.get(i);
+							            QBoardBean bean=vec.get(i);
 							    %>
 							        		<tr height="40" class="line">
 							        			<td width="50" align="center"><%=number-- %></td>
 							        			<td width="100" align="center"><%=bean.getPlace() %></td>
+							        			<td width="100" align="center"><%=bean.getId() %></td>
 							        			<td width="100" align="center"><%=bean.getType() %></td>
 							         		    <td width="400" align="left">
-							          		  	<a href="sboardInfo.jsp?num=<%=bean.getNum() %>" style="text-decoration:none">
+							          		  	<a href="qboardInfo.jsp?num=<%=bean.getNum() %>" style="text-decoration:none">
 							               
 							    <%
 							               		if(bean.getRe_step() > 1){
@@ -126,7 +138,9 @@ h3{
 							              	 	&nbsp;
 							    <%
 							                   		}
-							                     
+							    %>
+							    [답변]
+							    <%         
 							                	}
 							    %>
 							               		<%=bean.getSubject()%>
@@ -165,19 +179,19 @@ h3{
 										
 								if(startPage > 10){
 					%>
-									<li class="left"><a href="service_notice.jsp?pageNum=<%=startPage-10 %>">left</a></li>
+									<li class="left"><a href="service_question.jsp?pageNum=<%=startPage-10 %>">left</a></li>
 					<%
 								}
 												
 								for(int i=startPage;i<=endPage;i++){
 					%>
-									<li><a href="service_notice.jsp?pageNum=<%=i %>"><%=i %></a></li>
+									<li><a href="service_question.jsp?pageNum=<%=i %>"><%=i %></a></li>
 					<% 
 								}
 												
 								if(endPage < pageCount){
 					%>
-									<li class="right"><a href="service_notice.jsp?pageNum=<%=startPage+10 %>">right</a></li>
+									<li class="right"><a href="service_question.jsp?pageNum=<%=startPage+10 %>">right</a></li>
 					<%
 								}
 							}

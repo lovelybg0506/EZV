@@ -54,12 +54,7 @@
                     <ul class="nav navbar-nav navbar-right">
                         <li class="active"><a href="../main/main.jsp">Home</a></li>
                         <li class="dropdown"><a href="../movie/movie_list.jsp">영화</a></li>                  
-                        <li class="dropdown"><a href="#1">예매 <i class="fa fa-angle-down"></i></a>
-                            <ul role="menu" class="sub-menu">
-                                <li><a href="#1">빠른 예매</a></li>
-                                <li><a href="../movie/movie_time_day1.jsp">상영시간표</a></li>
-                            </ul>
-                        </li>
+                        <li class="dropdown"><a href="../movie/movie_time_day1.jsp">상영시간표</a></li>
                       	<li class="dropdown"><a href="../theater/theater.jsp">극장 </a></li>                         
                         <li class="dropdown"><a href="../event/eventmain.jsp">이벤트</a></li>                         
                         <li class="dropdown"><a href="#">SNS <i class="fa fa-angle-down"></i></a>  
@@ -74,8 +69,8 @@
                         <ul role="menu" class="sub-menu">
                                 <li><a href="../service/service_notice.jsp">공지사항</a></li>
                                 <li><a href="../service/service_QnA.jsp">자주찾는질문</a></li>
-                                <li><a href="#">1:1 문의</a></li>
-                                <li><a href="#">분실물 문의</a></li>
+                                <li><a href="../service/service_question.jsp">1:1 문의</a></li>
+                                <li><a href="../service/service_LnF.jsp">분실물 문의</a></li>
                             </ul>
                         
                         </li>                         

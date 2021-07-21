@@ -23,7 +23,6 @@
 #tdh {
 	color: #A5732A;
 }
-
 .rvwUpd, .rvwDel {
 	display: inline-block;
 	border: 1px solid #808080;
@@ -98,7 +97,9 @@
 							</ul>
 						</div>
 						<div class="live-preview">
-							<a href="#" class="btn btn-common uppercase">예매하기</a>
+						    <c:if test="${loginUser!=null }">
+								<a href="../resveration/ResverationForm.jsp" class="btn btn-common uppercase" >예매하기</a>
+							</c:if>
 						</div>
 					</div>
 				</div>
@@ -183,35 +184,34 @@
 				</div>
 			</div>
 
-			<!-- 리뷰 작성 칸 -->
-			<form action="../movie/Review_Proc.jsp" method="post">
-				<c:if test="${loginUser.id!=null }">
-					<div class="row3">
-						<div align="left" class="row2" style="margin: 0; padding-right: 250px;">
-							<hr>
-							<div class="col-md-8" style="height: 120px; width: 880px;">
-								<div class="contact-form bottom">
-									<h2>리뷰</h2>
-									<!-- style="border-color: #A5732A;" -->
-										<select name="rgrade" class="input-lg" style="border-color: #A5732A;">
-										<option value="1">★☆☆☆☆</option>
-										<option value="2">★★☆☆☆</option>
-										<option value="3">★★★☆☆</option>
-										<option value="4">★★★★☆</option>
-										<option value="5" selected="selected">★★★★★</option>
-									</select> 
-									<input type="submit" style="height: 50px; width: 65px; margin-bottom: 10px;" value="작성" class="btn btn-submit"> 
-									<input type="reset" style="height: 50px; width: 65px; margin-bottom: 10px;" value="취소" class="btn btn-submit"> 
-								</div>
-							</div>
-						</div>
-							<textarea name="rcontent" class="form-control" rows="4" cols="500" style="width:900px;"placeholder=" 재미있게 보셨나요? 영화의 어떤 점이 좋았는지 이야기해주세요."></textarea>
-							<input type="hidden" name="rmovie" value="<%=mvo.getMno()%>">
-							<input type="hidden" name="rid" value="${loginUser.getId() }">
-					</div>
-				</c:if>
-			</form>
-
+		<!-- 리뷰 작성 칸 -->
+         <form action="../movie/Review_Proc.jsp" method="post">
+            <c:if test="${loginUser.id!=null }">
+               <div class="row3">
+                  <div align="left" class="row2" style="margin: 0; padding-right: 250px;">
+                     <hr>
+                     <div class="col-md-8" style="height: 120px; width: 880px;">
+                        <div class="contact-form bottom">
+                           <h2>리뷰</h2>
+                           <!-- style="border-color: #A5732A;" -->
+                              <select name="rgrade" class="input-lg" style="border-color: #A5732A;">
+                              <option value="1">★☆☆☆☆</option>
+                              <option value="2">★★☆☆☆</option>
+                              <option value="3">★★★☆☆</option>
+                              <option value="4">★★★★☆</option>
+                              <option value="5" selected="selected">★★★★★</option>
+                           </select> 
+                           <input type="submit" style="height: 50px; width: 65px; margin-bottom: 10px;" value="작성" class="btn btn-submit"> 
+                           <input type="reset" style="height: 50px; width: 65px; margin-bottom: 10px;" value="취소" class="btn btn-submit"> 
+                        </div>
+                     </div>
+                  </div>
+                     <textarea name="rcontent" class="form-control" rows="4" cols="500" style="width:900px;"placeholder=" 재미있게 보셨나요? 영화의 어떤 점이 좋았는지 이야기해주세요."></textarea>
+                     <input type="hidden" name="rmovie" value="<%=mvo.getMno()%>">
+                     <input type="hidden" name="rid" value="${loginUser.getId() }">
+               </div>
+            </c:if>
+         </form>
 			<!-- 리뷰 목록 -->
 			<div class="row3">
 				<div align="left" class="row2"
@@ -230,23 +230,19 @@
 										pageContext.setAttribute("rvo", rvo);
 								%>
 								<img src="../movie/images/user.png">&nbsp;&nbsp;<%=rvo.getRid()%>&nbsp;&nbsp;
-								<font style="color: #FFBB00;"><c:forEach begin="1" end="${rvo.rgrade}">★</c:forEach></font> <font
-									style="color: #808080;"><c:forEach begin="1" end="${5-rvo.rgrade}">☆</c:forEach></font> (${rvo.rgrade }.0)
+								<font style="color: #FFBB00;"><c:forEach begin="1" end="${rvo.rgrade}">★</c:forEach></font>
+								<font style="color:#808080;"><c:forEach begin="1" end="${5-rvo.rgrade}">☆</c:forEach></font> (${rvo.rgrade }.0)
 								<p><%=rvo.getRcontent()%></p>
 								<h5 style="text-align: right">
 									<%=rvo.getRdate()%><br>
-									<c:if
-										test="${loginUser.id != null && loginUser.id == rvo.rid && loginUser.id!='admin'}">
-										<button type="button" class="rvwUpd"
-											onclick="location.href='Review_UpdateForm.jsp?rno=<%=rvo.getRno()%>&&<%=rvo.getRgrade()%>'">수정</button>&nbsp;
-								<button type=button class="rvwDel"
-											onclick="location.href='Review_DeleteForm.jsp?rno=<%=rvo.getRno()%>'">삭제</button>
-									</c:if>
-								</h5>
+								<c:if test="${loginUser.id != null && loginUser.id == rvo.rid && loginUser.id!='admin'}">
+								<button type="button" class="rvwUpd" onclick="location.href='Review_UpdateForm.jsp?rno=<%=rvo.getRno()%>&&<%=rvo.getRgrade() %>'" >수정</button>&nbsp;
+								<button type=button class="rvwDel" onclick="location.href='Review_DeleteForm.jsp?rno=<%=rvo.getRno()%>'">삭제</button>
+								</c:if>
+									</h5>
 								<c:if test="${loginUser.id=='admin'}">
 									<h5 style="text-align: right">
-										<button type=button class="rvwDel"
-											onclick="location.href='Review_DeleteForm.jsp?rno=<%=rvo.getRno()%>'">삭제</button>
+										<button type=button class="rvwDel" onclick="location.href='Review_DeleteForm.jsp?rno=<%=rvo.getRno()%>'">삭제</button>
 									</h5>
 								</c:if>
 								<hr>

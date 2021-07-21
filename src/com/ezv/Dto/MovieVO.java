@@ -17,7 +17,6 @@ public class MovieVO {
 	private String mvideo1;
 	private String mvideo2;
 	private String mgrade;
-	
 	public int getMno() {
 		return mno;
 	}
