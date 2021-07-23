@@ -1,0 +1,18 @@
+create table reservation(
+num number not null, -- 예매번호
+mno number, -- 영화번호
+id varchar2(50) not null, -- id
+area varchar2(50), -- 영화관 장소
+place varchar2(50), -- 상영관
+rsdate varchar2(50) not null, -- 영화 예매할 날짜
+rstime varchar2(100) not null, -- 영화 예매할 시간
+seat varchar2(50), -- 좌석
+inwon number not null, -- 인원 수
+price number not null, -- 가격
+foreign key(id) REFERENCES ezv_member(id),
+foreign key(mno) REFERENCES ezv_movie(mno)
+);
+
+create sequence reserve_seq;
+
+commit;
