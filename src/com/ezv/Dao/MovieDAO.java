@@ -34,7 +34,7 @@ public class MovieDAO {
 
 		try {
 			getcon();
-			String sql = "select * from ezv_movie order by mposter ASC";
+			String sql = "select * from ezv_movie order by mno ASC";
 			pstmt = conn.prepareStatement(sql);
 			rs = pstmt.executeQuery();
 

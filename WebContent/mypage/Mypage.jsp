@@ -52,8 +52,7 @@ h2,#tdh{
 						onclick="location.href ='MemberUpdateForm.jsp?id=${loginUser.getId()}'">회원 수정</button>
 					<button type="button"
 						onclick="location.href ='MemberDeleteForm.jsp?id=${loginUser.getId()}'">회원 탈퇴</button>
-					<button type="button"
-						onclick="location.href ='#'">예매 정보 보기</button>
+					<button type="button" onclick="location.href ='../reservation/reservationResult.jsp'">예매 정보 보기</button>
 				</td>
 			</tr>
 		</table>

@@ -54,7 +54,6 @@
 				</div>
 				<div class="row3">
 				<div align="right" class="row2" style="margin: 0; padding-right: 50px;">
-				<!--<div align="right" class="row2" style="margin: 0; padding-right: 250px;">  -->
 					<img src="../movie/images/sun.png" style="height:30px; width:30px;"><font size=1px>주간 영화</font>
 					<img src="../movie/images/moon.png" style="height:30px; width:30px;"><font size=1px>심야 영화</font>
 				</div>
@@ -75,54 +74,36 @@
 					</ul>
 					<ul>
 						<li>
-							<b style="align:center;">06:00</b>&nbsp; &nbsp;
-							<img src="../movie/images/sun.png" style="height:20px;  align:center;"><b>&nbsp; &nbsp;|&nbsp; &nbsp;</b>
-							<b style="align:center;">09:30</b>&nbsp; &nbsp;
-							<img src="../movie/images/sun.png" style="height:20px;  align:center;"><b>&nbsp; &nbsp;|&nbsp; &nbsp;</b>
-							<b style="align:center;">13:00&nbsp; &nbsp;|&nbsp; &nbsp;</b>
-							<b style="align:center;">16:30&nbsp; &nbsp;|&nbsp; &nbsp;</b>
-							<b style="align:center;">20:00&nbsp; &nbsp;|&nbsp; &nbsp;</b>
-							<b style="align:center;">23:30</b>
-						</li>
-					</ul>
-						<ul class="elements">
-						<li><i class="fa fa-angle-right"></i>
-						<b>&nbsp;2D&nbsp;&nbsp;|&nbsp;&nbsp;2관&nbsp;&nbsp;|&nbsp;&nbsp;4F</b><br>
-						</li>
-					
-					</ul>
-					<ul>
-						<li>
-							<b style="align:center;">06:30</b>&nbsp; &nbsp;
-							<img src="../movie/images/sun.png" style="height:20px;  align:center;"><b>&nbsp; &nbsp;|&nbsp; &nbsp;</b>
-							<b style="align:center;">10:00</b>&nbsp; &nbsp;
-							<img src="../movie/images/sun.png" style="height:20px;  align:center;"><b>&nbsp; &nbsp;|&nbsp; &nbsp;</b>
-							<b style="align:center;">13:30&nbsp; &nbsp;|&nbsp; &nbsp;</b>
-							<b style="align:center;">17:00&nbsp; &nbsp;|&nbsp; &nbsp;</b>
-							<b style="align:center;">20:30&nbsp; &nbsp;|&nbsp; &nbsp;</b>
-							<b style="align:center;">00:00</b>
-						</li>
-					</ul>
-						<ul class="elements">
-						<li><i class="fa fa-angle-right"></i>
-						<b>&nbsp;2D&nbsp;&nbsp;|&nbsp;&nbsp;3관&nbsp;&nbsp;|&nbsp;&nbsp;4F</b><br>
-						</li>
-					
-					</ul>
-					<ul>
-						<li>
-							<b style="align:center;">07:00</b>&nbsp; &nbsp;
+							<b style="align:center;">08:40</b>&nbsp; &nbsp;
 							<img src="../movie/images/sun.png" style="height:20px;  align:center;"><b>&nbsp; &nbsp;|&nbsp; &nbsp;</b>
 							<b style="align:center;">10:30&nbsp; &nbsp;|&nbsp; &nbsp;</b>
-							<b style="align:center;">14:00&nbsp; &nbsp;|&nbsp; &nbsp;</b>
-							<b style="align:center;">17:30&nbsp; &nbsp;|&nbsp; &nbsp;</b>
-							<b style="align:center;">21:00&nbsp; &nbsp;|&nbsp; &nbsp;</b>
-							<b style="align:center;">01:00</b>&nbsp; &nbsp;
+							<b style="align:center;">13:20&nbsp; &nbsp;|&nbsp; &nbsp;</b>
+							<b style="align:center;">15:40&nbsp; &nbsp;|&nbsp; &nbsp;</b>
+							<b style="align:center;">21:20&nbsp; &nbsp;|&nbsp; &nbsp;</b>
+							<b style="align:center;">23:50</b>
+							<img src="../movie/images/moon.png" style="height:20px;  align:center;">
+						</li>
+					</ul>
+						<ul class="elements">
+						<li><i class="fa fa-angle-right"></i>
+						<b>&nbsp;2D&nbsp;&nbsp;|&nbsp;&nbsp;2관&nbsp;&nbsp;|&nbsp;&nbsp;7F</b><br>
+						</li>
+					
+					</ul>
+					<ul>
+						<li>
+							<b style="align:center;">08:40</b>&nbsp; &nbsp;
+							<img src="../movie/images/sun.png" style="height:20px;  align:center;"><b>&nbsp; &nbsp;|&nbsp; &nbsp;</b>
+							<b style="align:center;">10:30&nbsp; &nbsp;|&nbsp; &nbsp;</b>
+							<b style="align:center;">13:20&nbsp; &nbsp;|&nbsp; &nbsp;</b>
+							<b style="align:center;">15:40&nbsp; &nbsp;|&nbsp; &nbsp;</b>
+							<b style="align:center;">21:20&nbsp; &nbsp;|&nbsp; &nbsp;</b>
+							<b style="align:center;">23:50</b>
 							<img src="../movie/images/moon.png" style="height:20px;  align:center;">
 						</li>
 					</ul>
 				</div>
-				</div>
+			</div>
 			<div class="row3">
 			<div align="left" class="row2" style="margin: 0; padding-right: 250px;">
 				<hr style="width:1150px;">
@@ -134,23 +115,36 @@
 					<div class="project-info overflow">
 					<ul class="elements">
 						<li><i class="fa fa-angle-right"></i>
-						<b>&nbsp;2D&nbsp;&nbsp;|&nbsp;&nbsp;4관&nbsp;&nbsp;|&nbsp;&nbsp;4F</b><br>
+						<b>&nbsp;2D&nbsp;&nbsp;|&nbsp;&nbsp;1관&nbsp;&nbsp;|&nbsp;&nbsp;4F</b><br>
 						</li>
 					</ul>
 					<ul>
 						<li>
-							<b style="align:center;">08:00</b>&nbsp; &nbsp;
+							<b style="align:center;">08:40</b>&nbsp; &nbsp;
 							<img src="../movie/images/sun.png" style="height:20px;  align:center;"><b>&nbsp; &nbsp;|&nbsp; &nbsp;</b>
-							<b style="align:center;">10:00</b>&nbsp; &nbsp;
+							<b style="align:center;">10:30&nbsp; &nbsp;|&nbsp; &nbsp;</b>
+							<b style="align:center;">13:20&nbsp; &nbsp;|&nbsp; &nbsp;</b>
+							<b style="align:center;">15:40&nbsp; &nbsp;|&nbsp; &nbsp;</b>
+							<b style="align:center;">21:20&nbsp; &nbsp;|&nbsp; &nbsp;</b>
+							<b style="align:center;">23:50</b>
+							<img src="../movie/images/moon.png" style="height:20px;  align:center;">
+						</li>
+					</ul>
+					<ul class="elements">
+						<li><i class="fa fa-angle-right"></i>
+						<b>&nbsp;2D&nbsp;&nbsp;|&nbsp;&nbsp;2관&nbsp;&nbsp;|&nbsp;&nbsp;7F</b><br>
+						</li>
+					
+					</ul>
+					<ul>
+						<li>
+							<b style="align:center;">08:40</b>&nbsp; &nbsp;
 							<img src="../movie/images/sun.png" style="height:20px;  align:center;"><b>&nbsp; &nbsp;|&nbsp; &nbsp;</b>
-							<b style="align:center;">12:00&nbsp; &nbsp;|&nbsp; &nbsp;</b>
-							<b style="align:center;">14:00&nbsp; &nbsp;|&nbsp; &nbsp;</b>
-							<b style="align:center;">16:00&nbsp; &nbsp;|&nbsp; &nbsp;</b>
-							<b style="align:center;">18:00&nbsp; &nbsp;|&nbsp; &nbsp;</b>
-							<b style="align:center;">20:00&nbsp; &nbsp;|&nbsp; &nbsp;</b>
-							<b style="align:center;">22:00&nbsp; &nbsp;|&nbsp; &nbsp;</b>
-							<b style="align:center;">00:00&nbsp; &nbsp;|&nbsp; &nbsp;</b>
-							<b style="align:center;">02:00&nbsp; &nbsp;</b>
+							<b style="align:center;">10:30&nbsp; &nbsp;|&nbsp; &nbsp;</b>
+							<b style="align:center;">13:20&nbsp; &nbsp;|&nbsp; &nbsp;</b>
+							<b style="align:center;">15:40&nbsp; &nbsp;|&nbsp; &nbsp;</b>
+							<b style="align:center;">21:20&nbsp; &nbsp;|&nbsp; &nbsp;</b>
+							<b style="align:center;">23:50</b>
 							<img src="../movie/images/moon.png" style="height:20px;  align:center;">
 						</li>
 					</ul>
@@ -167,21 +161,35 @@
 				<div class="project-info overflow">
 					<ul class="elements">
 						<li><i class="fa fa-angle-right"></i>
-						<b>&nbsp;2D&nbsp;&nbsp;|&nbsp;&nbsp;5관&nbsp;&nbsp;|&nbsp;&nbsp;4F</b><br>
+						<b>&nbsp;2D&nbsp;&nbsp;|&nbsp;&nbsp;1관&nbsp;&nbsp;|&nbsp;&nbsp;4F</b><br>
 						</li>
 					</ul>
 					<ul>
 						<li>
-							<b style="align:center;">06:00</b>&nbsp; &nbsp;
+							<b style="align:center;">08:40</b>&nbsp; &nbsp;
 							<img src="../movie/images/sun.png" style="height:20px;  align:center;"><b>&nbsp; &nbsp;|&nbsp; &nbsp;</b>
-							<b style="align:center;">09:00</b>&nbsp; &nbsp;
+							<b style="align:center;">10:30&nbsp; &nbsp;|&nbsp; &nbsp;</b>
+							<b style="align:center;">13:20&nbsp; &nbsp;|&nbsp; &nbsp;</b>
+							<b style="align:center;">15:40&nbsp; &nbsp;|&nbsp; &nbsp;</b>
+							<b style="align:center;">21:20&nbsp; &nbsp;|&nbsp; &nbsp;</b>
+							<b style="align:center;">23:50</b>
+							<img src="../movie/images/moon.png" style="height:20px;  align:center;">
+						</li>
+					</ul>
+					<ul class="elements">
+						<li><i class="fa fa-angle-right"></i>
+						<b>&nbsp;2D&nbsp;&nbsp;|&nbsp;&nbsp;2관&nbsp;&nbsp;|&nbsp;&nbsp;7F</b><br>
+						</li>
+					</ul>
+					<ul>
+						<li>
+							<b style="align:center;">08:40</b>&nbsp; &nbsp;
 							<img src="../movie/images/sun.png" style="height:20px;  align:center;"><b>&nbsp; &nbsp;|&nbsp; &nbsp;</b>
-							<b style="align:center;">12:00&nbsp; &nbsp;|&nbsp; &nbsp;</b>
-							<b style="align:center;">15:00&nbsp; &nbsp;|&nbsp; &nbsp;</b>
-							<b style="align:center;">18:00&nbsp; &nbsp;|&nbsp; &nbsp;</b>
-							<b style="align:center;">21:00&nbsp; &nbsp;|&nbsp; &nbsp;</b>
-							<b style="align:center;">00:00&nbsp; &nbsp;|&nbsp; &nbsp;</b>
-							<b style="align:center;">03:00&nbsp; &nbsp;</b>
+							<b style="align:center;">10:30&nbsp; &nbsp;|&nbsp; &nbsp;</b>
+							<b style="align:center;">13:20&nbsp; &nbsp;|&nbsp; &nbsp;</b>
+							<b style="align:center;">15:40&nbsp; &nbsp;|&nbsp; &nbsp;</b>
+							<b style="align:center;">21:20&nbsp; &nbsp;|&nbsp; &nbsp;</b>
+							<b style="align:center;">23:50</b>
 							<img src="../movie/images/moon.png" style="height:20px;  align:center;">
 						</li>
 					</ul>
@@ -198,15 +206,36 @@
 					<div class="project-info overflow">
 					<ul class="elements">
 						<li><i class="fa fa-angle-right"></i>
-						<b>&nbsp;2D&nbsp;&nbsp;|&nbsp;&nbsp;6관&nbsp;&nbsp;|&nbsp;&nbsp;4F</b><br>
+						<b>&nbsp;2D&nbsp;&nbsp;|&nbsp;&nbsp;1관&nbsp;&nbsp;|&nbsp;&nbsp;4F</b><br>
 						</li>
 					</ul>
 					<ul>
 						<li>
-							<b style="align:center;">06:00&nbsp; &nbsp;</b>
+							<b style="align:center;">08:40</b>&nbsp; &nbsp;
 							<img src="../movie/images/sun.png" style="height:20px;  align:center;"><b>&nbsp; &nbsp;|&nbsp; &nbsp;</b>
-							<b style="align:center;">14:30&nbsp; &nbsp;|&nbsp; &nbsp;</b>
-							<b style="align:center;">22:30</b>
+							<b style="align:center;">10:30&nbsp; &nbsp;|&nbsp; &nbsp;</b>
+							<b style="align:center;">13:20&nbsp; &nbsp;|&nbsp; &nbsp;</b>
+							<b style="align:center;">15:40&nbsp; &nbsp;|&nbsp; &nbsp;</b>
+							<b style="align:center;">21:20&nbsp; &nbsp;|&nbsp; &nbsp;</b>
+							<b style="align:center;">23:50</b>
+							<img src="../movie/images/moon.png" style="height:20px;  align:center;">
+						</li>
+					</ul>
+					<ul class="elements">
+						<li><i class="fa fa-angle-right"></i>
+						<b>&nbsp;2D&nbsp;&nbsp;|&nbsp;&nbsp;2관&nbsp;&nbsp;|&nbsp;&nbsp;7F</b><br>
+						</li>
+					</ul>
+					<ul>
+						<li>
+							<b style="align:center;">08:40</b>&nbsp; &nbsp;
+							<img src="../movie/images/sun.png" style="height:20px;  align:center;"><b>&nbsp; &nbsp;|&nbsp; &nbsp;</b>
+							<b style="align:center;">10:30&nbsp; &nbsp;|&nbsp; &nbsp;</b>
+							<b style="align:center;">13:20&nbsp; &nbsp;|&nbsp; &nbsp;</b>
+							<b style="align:center;">15:40&nbsp; &nbsp;|&nbsp; &nbsp;</b>
+							<b style="align:center;">21:20&nbsp; &nbsp;|&nbsp; &nbsp;</b>
+							<b style="align:center;">23:50</b>
+							<img src="../movie/images/moon.png" style="height:20px;  align:center;">
 						</li>
 					</ul>
 				</div>
@@ -219,69 +248,42 @@
 						</b>
 						<font size="2px">판타지, 모험, 액션, 가족/ 152분/ 2001.12.14개봉</font>
 				</div>
-				<div>
-						<div class="project-info overflow">
-					<ul class="elements">
+				<div class="project-info overflow">
+				<ul class="elements">
 						<li><i class="fa fa-angle-right"></i>
-						<b>&nbsp;2D&nbsp;&nbsp;|&nbsp;&nbsp;7관&nbsp;&nbsp;|&nbsp;&nbsp;4F</b><br>
+						<b>&nbsp;2D&nbsp;&nbsp;|&nbsp;&nbsp;1관&nbsp;&nbsp;|&nbsp;&nbsp;4F</b><br>
 						</li>
 					</ul>
 					<ul>
 						<li>
-							<b style="align:center;">06:00</b>&nbsp; &nbsp;
+							<b style="align:center;">08:40</b>&nbsp; &nbsp;
 							<img src="../movie/images/sun.png" style="height:20px;  align:center;"><b>&nbsp; &nbsp;|&nbsp; &nbsp;</b>
-							<b style="align:center;">09:00</b>&nbsp; &nbsp;
-							<img src="../movie/images/sun.png" style="height:20px;  align:center;"><b>&nbsp; &nbsp;|&nbsp; &nbsp;</b>
-							<b style="align:center;">12:00&nbsp; &nbsp;|&nbsp; &nbsp;</b>
-							<b style="align:center;">15:00&nbsp; &nbsp;|&nbsp; &nbsp;</b>
-							<b style="align:center;">18:00&nbsp; &nbsp;|&nbsp; &nbsp;</b>
-							<b style="align:center;">21:00&nbsp; &nbsp;|&nbsp; &nbsp;</b>
-							<b style="align:center;">00:00&nbsp; &nbsp;|&nbsp; &nbsp;</b>
-							<b style="align:center;">03:00</b>&nbsp; &nbsp;
+							<b style="align:center;">10:30&nbsp; &nbsp;|&nbsp; &nbsp;</b>
+							<b style="align:center;">13:20&nbsp; &nbsp;|&nbsp; &nbsp;</b>
+							<b style="align:center;">15:40&nbsp; &nbsp;|&nbsp; &nbsp;</b>
+							<b style="align:center;">21:20&nbsp; &nbsp;|&nbsp; &nbsp;</b>
+							<b style="align:center;">23:50</b>
 							<img src="../movie/images/moon.png" style="height:20px;  align:center;">
 						</li>
 					</ul>
 					<ul class="elements">
 						<li><i class="fa fa-angle-right"></i>
-						<b>&nbsp;2D&nbsp;&nbsp;|&nbsp;&nbsp;8관&nbsp;&nbsp;|&nbsp;&nbsp;7F</b><br>
+						<b>&nbsp;2D&nbsp;&nbsp;|&nbsp;&nbsp;2관&nbsp;&nbsp;|&nbsp;&nbsp;7F</b><br>
 						</li>
 					</ul>
 					<ul>
 						<li>
-							<b style="align:center;">06:30</b>&nbsp; &nbsp;
+							<b style="align:center;">08:40</b>&nbsp; &nbsp;
 							<img src="../movie/images/sun.png" style="height:20px;  align:center;"><b>&nbsp; &nbsp;|&nbsp; &nbsp;</b>
-							<b style="align:center;">09:30</b>&nbsp; &nbsp;
-							<img src="../movie/images/sun.png" style="height:20px;  align:center;"><b>&nbsp; &nbsp;|&nbsp; &nbsp;</b>
-							<b style="align:center;">12:30&nbsp; &nbsp;|&nbsp; &nbsp;</b>
-							<b style="align:center;">15:30&nbsp; &nbsp;|&nbsp; &nbsp;</b>
-							<b style="align:center;">18:30&nbsp; &nbsp;|&nbsp; &nbsp;</b>
-							<b style="align:center;">21:30&nbsp; &nbsp;|&nbsp; &nbsp;</b>
-							<b style="align:center;">00:30&nbsp; &nbsp;|&nbsp; &nbsp;</b>
-							<b style="align:center;">03:30</b>&nbsp; &nbsp;
-							<img src="../movie/images/moon.png" style="height:20px;  align:center;">
-						</li>
-					</ul>
-					<ul class="elements">
-						<li><i class="fa fa-angle-right"></i>
-						<b>&nbsp;2D&nbsp;&nbsp;|&nbsp;&nbsp;9관&nbsp;&nbsp;|&nbsp;&nbsp;7F</b><br>
-						</li>
-					</ul>
-					<ul>
-						<li>
-							<b style="align:center;">07:00</b>&nbsp; &nbsp;
-							<img src="../movie/images/sun.png" style="height:20px;  align:center;"><b>&nbsp; &nbsp;|&nbsp; &nbsp;</b>
-							<b style="align:center;">10:00</b>&nbsp; &nbsp;
-							<img src="../movie/images/sun.png" style="height:20px;  align:center;"><b>&nbsp; &nbsp;|&nbsp; &nbsp;</b>
-							<b style="align:center;">13:00&nbsp; &nbsp;|&nbsp; &nbsp;</b>
-							<b style="align:center;">16:00&nbsp; &nbsp;|&nbsp; &nbsp;</b>
-							<b style="align:center;">19:00&nbsp; &nbsp;|&nbsp; &nbsp;</b>
-							<b style="align:center;">22:00&nbsp; &nbsp;|&nbsp; &nbsp;</b>
-							<b style="align:center;">01:00</b>&nbsp; &nbsp;
+							<b style="align:center;">10:30&nbsp; &nbsp;|&nbsp; &nbsp;</b>
+							<b style="align:center;">13:20&nbsp; &nbsp;|&nbsp; &nbsp;</b>
+							<b style="align:center;">15:40&nbsp; &nbsp;|&nbsp; &nbsp;</b>
+							<b style="align:center;">21:20&nbsp; &nbsp;|&nbsp; &nbsp;</b>
+							<b style="align:center;">23:50</b>
 							<img src="../movie/images/moon.png" style="height:20px;  align:center;">
 						</li>
 					</ul>
 				</div>
-			</div>
 			</div>
 		<div class="row3">
 					<div align="left" class="row2" style="margin: 0; padding-right: 250px;">
@@ -291,32 +293,42 @@
 						</b>
 						<font size="2px">코미디/ 111분/ 2019.01.23개봉</font>
 				</div>
-				<div>
-						<div class="project-info overflow">
+				<div class="project-info overflow">
 					<ul class="elements">
 						<li><i class="fa fa-angle-right"></i>
-						<b>&nbsp;2D&nbsp;&nbsp;|&nbsp;&nbsp;10관&nbsp;&nbsp;|&nbsp;&nbsp;7F</b><br>
+						<b>&nbsp;2D&nbsp;&nbsp;|&nbsp;&nbsp;1관&nbsp;&nbsp;|&nbsp;&nbsp;4F</b><br>
 						</li>
 					</ul>
 					<ul>
 						<li>
-							<b style="align:center;">06:00</b>&nbsp; &nbsp;
+							<b style="align:center;">08:40</b>&nbsp; &nbsp;
 							<img src="../movie/images/sun.png" style="height:20px;  align:center;"><b>&nbsp; &nbsp;|&nbsp; &nbsp;</b>
-							<b style="align:center;">08:30</b>&nbsp; &nbsp;
+							<b style="align:center;">10:30&nbsp; &nbsp;|&nbsp; &nbsp;</b>
+							<b style="align:center;">13:20&nbsp; &nbsp;|&nbsp; &nbsp;</b>
+							<b style="align:center;">15:40&nbsp; &nbsp;|&nbsp; &nbsp;</b>
+							<b style="align:center;">21:20&nbsp; &nbsp;|&nbsp; &nbsp;</b>
+							<b style="align:center;">23:50</b>
+							<img src="../movie/images/moon.png" style="height:20px;  align:center;">
+						</li>
+					</ul>
+					<ul class="elements">
+						<li><i class="fa fa-angle-right"></i>
+						<b>&nbsp;2D&nbsp;&nbsp;|&nbsp;&nbsp;2관&nbsp;&nbsp;|&nbsp;&nbsp;7F</b><br>
+						</li>
+					</ul>
+					<ul>
+						<li>
+							<b style="align:center;">08:40</b>&nbsp; &nbsp;
 							<img src="../movie/images/sun.png" style="height:20px;  align:center;"><b>&nbsp; &nbsp;|&nbsp; &nbsp;</b>
-							<b style="align:center;">11:00&nbsp; &nbsp;|&nbsp; &nbsp;</b>
-							<b style="align:center;">14:30&nbsp; &nbsp;|&nbsp; &nbsp;</b>
-							<b style="align:center;">17:00&nbsp; &nbsp;|&nbsp; &nbsp;</b>
-							<b style="align:center;">19:30&nbsp; &nbsp;|&nbsp; &nbsp;</b>
-							<b style="align:center;">22:00&nbsp; &nbsp;|&nbsp; &nbsp;</b>
-							<b style="align:center;">00:30</b>&nbsp; &nbsp;
-							<img src="../movie/images/moon.png" style="height:20px;  align:center;"><b>&nbsp; &nbsp;|&nbsp; &nbsp;</b>
-							<b style="align:center;">03:00</b>&nbsp; &nbsp;
+							<b style="align:center;">10:30&nbsp; &nbsp;|&nbsp; &nbsp;</b>
+							<b style="align:center;">13:20&nbsp; &nbsp;|&nbsp; &nbsp;</b>
+							<b style="align:center;">15:40&nbsp; &nbsp;|&nbsp; &nbsp;</b>
+							<b style="align:center;">21:20&nbsp; &nbsp;|&nbsp; &nbsp;</b>
+							<b style="align:center;">23:50</b>
 							<img src="../movie/images/moon.png" style="height:20px;  align:center;">
 						</li>
 					</ul>
 				</div>
-			</div>
 			</div>
 			<div class="row3">
 					<div align="left" class="row2" style="margin: 0; padding-right: 250px;">
@@ -326,34 +338,43 @@
 						</b>
 						<font size="2px">드라마/ 95분/ 2021.06.30개봉</font>
 				</div>
-				<div>
 				<div class="project-info overflow">
 					<ul class="elements">
 						<li><i class="fa fa-angle-right"></i>
-						<b>&nbsp;2D&nbsp;&nbsp;|&nbsp;&nbsp;11관&nbsp;&nbsp;|&nbsp;&nbsp;7F</b><br>
+						<b>&nbsp;2D&nbsp;&nbsp;|&nbsp;&nbsp;1관&nbsp;&nbsp;|&nbsp;&nbsp;4F</b><br>
 						</li>
 					</ul>
 					<ul>
 						<li>
-							<b style="align:center;">06:00</b>&nbsp; &nbsp;
+							<b style="align:center;">08:40</b>&nbsp; &nbsp;
 							<img src="../movie/images/sun.png" style="height:20px;  align:center;"><b>&nbsp; &nbsp;|&nbsp; &nbsp;</b>
-							<b style="align:center;">08:00</b>&nbsp; &nbsp;
+							<b style="align:center;">10:30&nbsp; &nbsp;|&nbsp; &nbsp;</b>
+							<b style="align:center;">13:20&nbsp; &nbsp;|&nbsp; &nbsp;</b>
+							<b style="align:center;">15:40&nbsp; &nbsp;|&nbsp; &nbsp;</b>
+							<b style="align:center;">21:20&nbsp; &nbsp;|&nbsp; &nbsp;</b>
+							<b style="align:center;">23:50</b>
+							<img src="../movie/images/moon.png" style="height:20px;  align:center;">
+						</li>
+					</ul>
+					<ul class="elements">
+						<li><i class="fa fa-angle-right"></i>
+						<b>&nbsp;2D&nbsp;&nbsp;|&nbsp;&nbsp;2관&nbsp;&nbsp;|&nbsp;&nbsp;7F</b><br>
+						</li>
+					</ul>
+					<ul>
+						<li>
+							<b style="align:center;">08:40</b>&nbsp; &nbsp;
 							<img src="../movie/images/sun.png" style="height:20px;  align:center;"><b>&nbsp; &nbsp;|&nbsp; &nbsp;</b>
-							<b style="align:center;">10:00</b>&nbsp; &nbsp;
-							<img src="../movie/images/sun.png" style="height:20px;  align:center;"><b>&nbsp; &nbsp;|&nbsp; &nbsp;</b>
-							<b style="align:center;">12:00&nbsp; &nbsp;|&nbsp; &nbsp;</b>
-							<b style="align:center;">14:00&nbsp; &nbsp;|&nbsp; &nbsp;</b>
-							<b style="align:center;">16:00&nbsp; &nbsp;|&nbsp; &nbsp;</b>
-							<b style="align:center;">18:00&nbsp; &nbsp;|&nbsp; &nbsp;</b>
-							<b style="align:center;">20:00&nbsp; &nbsp;|&nbsp; &nbsp;</b>
-							<b style="align:center;">00:00&nbsp; &nbsp;|&nbsp; &nbsp;</b>
-							<b style="align:center;">02:00</b>&nbsp; &nbsp;
+							<b style="align:center;">10:30&nbsp; &nbsp;|&nbsp; &nbsp;</b>
+							<b style="align:center;">13:20&nbsp; &nbsp;|&nbsp; &nbsp;</b>
+							<b style="align:center;">15:40&nbsp; &nbsp;|&nbsp; &nbsp;</b>
+							<b style="align:center;">21:20&nbsp; &nbsp;|&nbsp; &nbsp;</b>
+							<b style="align:center;">23:50</b>
 							<img src="../movie/images/moon.png" style="height:20px;  align:center;">
 						</li>
 					</ul>
 				</div>
-			</div>
-			</div>
+		</div>
 		<div class="row3">
 					<div align="left" class="row2" style="margin: 0; padding-right: 250px;">
 					<hr style="width:1150px;">
@@ -362,24 +383,42 @@
 						</b>
 						<font size="2px">애니메이션, 모험, 액션/ 135분/ 2003.04.25개봉</font>
 				</div>
-				<div>
 				<div class="project-info overflow">
 					<ul class="elements">
 						<li><i class="fa fa-angle-right"></i>
-						<b>&nbsp;2D&nbsp;&nbsp;|&nbsp;&nbsp;6관&nbsp;&nbsp;|&nbsp;&nbsp;4F</b><br>
+						<b>&nbsp;2D&nbsp;&nbsp;|&nbsp;&nbsp;1관&nbsp;&nbsp;|&nbsp;&nbsp;4F</b><br>
 						</li>
 					</ul>
 					<ul>
 						<li>
-							<b style="align:center;">08:30</b>&nbsp; &nbsp;
+							<b style="align:center;">08:40</b>&nbsp; &nbsp;
 							<img src="../movie/images/sun.png" style="height:20px;  align:center;"><b>&nbsp; &nbsp;|&nbsp; &nbsp;</b>
-							<b style="align:center;">20:00&nbsp; &nbsp;|&nbsp; &nbsp;</b>
-							<b style="align:center;">01:00</b>&nbsp; &nbsp;
+							<b style="align:center;">10:30&nbsp; &nbsp;|&nbsp; &nbsp;</b>
+							<b style="align:center;">13:20&nbsp; &nbsp;|&nbsp; &nbsp;</b>
+							<b style="align:center;">15:40&nbsp; &nbsp;|&nbsp; &nbsp;</b>
+							<b style="align:center;">21:20&nbsp; &nbsp;|&nbsp; &nbsp;</b>
+							<b style="align:center;">23:50</b>
+							<img src="../movie/images/moon.png" style="height:20px;  align:center;">
+						</li>
+					</ul>
+					<ul class="elements">
+						<li><i class="fa fa-angle-right"></i>
+						<b>&nbsp;2D&nbsp;&nbsp;|&nbsp;&nbsp;2관&nbsp;&nbsp;|&nbsp;&nbsp;7F</b><br>
+						</li>
+					</ul>
+					<ul>
+						<li>
+							<b style="align:center;">08:40</b>&nbsp; &nbsp;
+							<img src="../movie/images/sun.png" style="height:20px;  align:center;"><b>&nbsp; &nbsp;|&nbsp; &nbsp;</b>
+							<b style="align:center;">10:30&nbsp; &nbsp;|&nbsp; &nbsp;</b>
+							<b style="align:center;">13:20&nbsp; &nbsp;|&nbsp; &nbsp;</b>
+							<b style="align:center;">15:40&nbsp; &nbsp;|&nbsp; &nbsp;</b>
+							<b style="align:center;">21:20&nbsp; &nbsp;|&nbsp; &nbsp;</b>
+							<b style="align:center;">23:50</b>
 							<img src="../movie/images/moon.png" style="height:20px;  align:center;">
 						</li>
 					</ul>
 				</div>
-			</div>
 			</div>
 			<div class="row3">
 					<div align="left" class="row2" style="margin: 0; padding-right: 250px;">
@@ -392,65 +431,35 @@
 					<div class="project-info overflow">
 					<ul class="elements">
 						<li><i class="fa fa-angle-right"></i>
-						<b>&nbsp;2D&nbsp;&nbsp;|&nbsp;&nbsp;12관&nbsp;&nbsp;|&nbsp;&nbsp;7F</b><br>
+						<b>&nbsp;2D&nbsp;&nbsp;|&nbsp;&nbsp;1관&nbsp;&nbsp;|&nbsp;&nbsp;4F</b><br>
 						</li>
 					</ul>
 					<ul>
 						<li>
-							<b style="align:center;">06:00</b>&nbsp; &nbsp;
+							<b style="align:center;">08:40</b>&nbsp; &nbsp;
 							<img src="../movie/images/sun.png" style="height:20px;  align:center;"><b>&nbsp; &nbsp;|&nbsp; &nbsp;</b>
-							<b style="align:center;">08:30</b>&nbsp; &nbsp;
-							<img src="../movie/images/sun.png" style="height:20px;  align:center;"><b>&nbsp; &nbsp;|&nbsp; &nbsp;</b>
-							<b style="align:center;">11:00&nbsp; &nbsp;|&nbsp; &nbsp;</b>
-							<b style="align:center;">13:30&nbsp; &nbsp;|&nbsp; &nbsp;</b>
-							<b style="align:center;">16:00&nbsp; &nbsp;|&nbsp; &nbsp;</b>
-							<b style="align:center;">18:30&nbsp; &nbsp;|&nbsp; &nbsp;</b>
-							<b style="align:center;">21:00&nbsp; &nbsp;|&nbsp; &nbsp;</b>
-							<b style="align:center;">23:30&nbsp; &nbsp;|&nbsp; &nbsp;</b>
-							<b style="align:center;">02:00</b>&nbsp; &nbsp;
+							<b style="align:center;">10:30&nbsp; &nbsp;|&nbsp; &nbsp;</b>
+							<b style="align:center;">13:20&nbsp; &nbsp;|&nbsp; &nbsp;</b>
+							<b style="align:center;">15:40&nbsp; &nbsp;|&nbsp; &nbsp;</b>
+							<b style="align:center;">21:20&nbsp; &nbsp;|&nbsp; &nbsp;</b>
+							<b style="align:center;">23:50</b>
 							<img src="../movie/images/moon.png" style="height:20px;  align:center;">
 						</li>
 					</ul>
 					<ul class="elements">
 						<li><i class="fa fa-angle-right"></i>
-						<b>&nbsp;2D&nbsp;&nbsp;|&nbsp;&nbsp;13관&nbsp;&nbsp;|&nbsp;&nbsp;7F</b><br>
+						<b>&nbsp;2D&nbsp;&nbsp;|&nbsp;&nbsp;2관&nbsp;&nbsp;|&nbsp;&nbsp;7F</b><br>
 						</li>
 					</ul>
 					<ul>
 						<li>
-							<b style="align:center;">06:30</b>&nbsp; &nbsp;
+							<b style="align:center;">08:40</b>&nbsp; &nbsp;
 							<img src="../movie/images/sun.png" style="height:20px;  align:center;"><b>&nbsp; &nbsp;|&nbsp; &nbsp;</b>
-							<b style="align:center;">09:00</b>&nbsp; &nbsp;
-							<img src="../movie/images/sun.png" style="height:20px;  align:center;"><b>&nbsp; &nbsp;|&nbsp; &nbsp;</b>
-							<b style="align:center;">11:30&nbsp; &nbsp;|&nbsp; &nbsp;</b>
-							<b style="align:center;">14:00&nbsp; &nbsp;|&nbsp; &nbsp;</b>
-							<b style="align:center;">16:30&nbsp; &nbsp;|&nbsp; &nbsp;</b>
-							<b style="align:center;">19:00&nbsp; &nbsp;|&nbsp; &nbsp;</b>
-							<b style="align:center;">21:30&nbsp; &nbsp;|&nbsp; &nbsp;</b>
-							<b style="align:center;">00:00&nbsp; &nbsp;|&nbsp; &nbsp;</b>
-							<b style="align:center;">02:30</b>&nbsp; &nbsp;
-							<img src="../movie/images/moon.png" style="height:20px;  align:center;">
-						</li>
-					</ul>
-					<ul class="elements">
-						<li><i class="fa fa-angle-right"></i>
-						<b>&nbsp;2D&nbsp;&nbsp;|&nbsp;&nbsp;14관&nbsp;&nbsp;|&nbsp;&nbsp;7F</b><br>
-						</li>
-					</ul>
-					<ul>
-						<li>
-							<b style="align:center;">07:00</b>&nbsp; &nbsp;
-							<img src="../movie/images/sun.png" style="height:20px;  align:center;"><b>&nbsp; &nbsp;|&nbsp; &nbsp;</b>
-							<b style="align:center;">09:30</b>&nbsp; &nbsp;
-							<img src="../movie/images/sun.png" style="height:20px;  align:center;"><b>&nbsp; &nbsp;|&nbsp; &nbsp;</b>
-							<b style="align:center;">12:00&nbsp; &nbsp;|&nbsp; &nbsp;</b>
-							<b style="align:center;">14:30&nbsp; &nbsp;|&nbsp; &nbsp;</b>
-							<b style="align:center;">17:00&nbsp; &nbsp;|&nbsp; &nbsp;</b>
-							<b style="align:center;">19:30&nbsp; &nbsp;|&nbsp; &nbsp;</b>
-							<b style="align:center;">22:00&nbsp; &nbsp;|&nbsp; &nbsp;</b>
-							<b style="align:center;">00:30</b>&nbsp; &nbsp;
-							<img src="../movie/images/moon.png" style="height:20px;  align:center;"><b>&nbsp; &nbsp;|&nbsp; &nbsp;</b>
-							<b style="align:center;">03:00</b>&nbsp; &nbsp;
+							<b style="align:center;">10:30&nbsp; &nbsp;|&nbsp; &nbsp;</b>
+							<b style="align:center;">13:20&nbsp; &nbsp;|&nbsp; &nbsp;</b>
+							<b style="align:center;">15:40&nbsp; &nbsp;|&nbsp; &nbsp;</b>
+							<b style="align:center;">21:20&nbsp; &nbsp;|&nbsp; &nbsp;</b>
+							<b style="align:center;">23:50</b>
 							<img src="../movie/images/moon.png" style="height:20px;  align:center;">
 						</li>
 					</ul>
@@ -467,14 +476,125 @@
 					<div class="project-info overflow">
 					<ul class="elements">
 						<li><i class="fa fa-angle-right"></i>
-						<b>&nbsp;2D&nbsp;&nbsp;|&nbsp;&nbsp;6관&nbsp;&nbsp;|&nbsp;&nbsp;4F</b><br>
+						<b>&nbsp;2D&nbsp;&nbsp;|&nbsp;&nbsp;1관&nbsp;&nbsp;|&nbsp;&nbsp;4F</b><br>
 						</li>
 					</ul>
 					<ul>
 						<li>
-							<b style="align:center;">11:30&nbsp; &nbsp;|&nbsp; &nbsp;</b>
-							<b style="align:center;">17:00&nbsp; &nbsp;|&nbsp; &nbsp;</b>
-							<b style="align:center;">04:00</b>&nbsp; &nbsp;
+							<b style="align:center;">08:40</b>&nbsp; &nbsp;
+							<img src="../movie/images/sun.png" style="height:20px;  align:center;"><b>&nbsp; &nbsp;|&nbsp; &nbsp;</b>
+							<b style="align:center;">10:30&nbsp; &nbsp;|&nbsp; &nbsp;</b>
+							<b style="align:center;">13:20&nbsp; &nbsp;|&nbsp; &nbsp;</b>
+							<b style="align:center;">15:40&nbsp; &nbsp;|&nbsp; &nbsp;</b>
+							<b style="align:center;">21:20&nbsp; &nbsp;|&nbsp; &nbsp;</b>
+							<b style="align:center;">23:50</b>
+							<img src="../movie/images/moon.png" style="height:20px;  align:center;">
+						</li>
+					</ul>
+					<ul class="elements">
+						<li><i class="fa fa-angle-right"></i>
+						<b>&nbsp;2D&nbsp;&nbsp;|&nbsp;&nbsp;2관&nbsp;&nbsp;|&nbsp;&nbsp;7F</b><br>
+						</li>
+					</ul>
+					<ul>
+						<li>
+							<b style="align:center;">08:40</b>&nbsp; &nbsp;
+							<img src="../movie/images/sun.png" style="height:20px;  align:center;"><b>&nbsp; &nbsp;|&nbsp; &nbsp;</b>
+							<b style="align:center;">10:30&nbsp; &nbsp;|&nbsp; &nbsp;</b>
+							<b style="align:center;">13:20&nbsp; &nbsp;|&nbsp; &nbsp;</b>
+							<b style="align:center;">15:40&nbsp; &nbsp;|&nbsp; &nbsp;</b>
+							<b style="align:center;">21:20&nbsp; &nbsp;|&nbsp; &nbsp;</b>
+							<b style="align:center;">23:50</b>
+							<img src="../movie/images/moon.png" style="height:20px;  align:center;">
+						</li>
+					</ul>
+					</div>
+				</div>
+			<div class="row3">
+				<div align="left" class="row2" style="margin: 0; padding-right: 250px;">
+					<hr style="width:1150px;">
+						<b>
+							<img src="../movie/images/12year.png" style="height: 30px;">&nbsp;&nbsp;너의 이름은&nbsp;&nbsp;<font color=blue>상영중&nbsp;&nbsp;</font>
+						</b>
+						<font size="2px">애니메이션, 드라마, 멜로/로맨스/ 106분/ 2018.01.04개봉</font>
+				</div>
+					<div class="project-info overflow">
+					<ul class="elements">
+						<li><i class="fa fa-angle-right"></i>
+						<b>&nbsp;2D&nbsp;&nbsp;|&nbsp;&nbsp;1관&nbsp;&nbsp;|&nbsp;&nbsp;4F</b><br>
+						</li>
+					</ul>
+					<ul>
+						<li>
+							<b style="align:center;">08:40</b>&nbsp; &nbsp;
+							<img src="../movie/images/sun.png" style="height:20px;  align:center;"><b>&nbsp; &nbsp;|&nbsp; &nbsp;</b>
+							<b style="align:center;">10:30&nbsp; &nbsp;|&nbsp; &nbsp;</b>
+							<b style="align:center;">13:20&nbsp; &nbsp;|&nbsp; &nbsp;</b>
+							<b style="align:center;">15:40&nbsp; &nbsp;|&nbsp; &nbsp;</b>
+							<b style="align:center;">21:20&nbsp; &nbsp;|&nbsp; &nbsp;</b>
+							<b style="align:center;">23:50</b>
+							<img src="../movie/images/moon.png" style="height:20px;  align:center;">
+						</li>
+					</ul>
+					<ul class="elements">
+						<li><i class="fa fa-angle-right"></i>
+						<b>&nbsp;2D&nbsp;&nbsp;|&nbsp;&nbsp;2관&nbsp;&nbsp;|&nbsp;&nbsp;7F</b><br>
+						</li>
+					</ul>
+					<ul>
+						<li>
+							<b style="align:center;">08:40</b>&nbsp; &nbsp;
+							<img src="../movie/images/sun.png" style="height:20px;  align:center;"><b>&nbsp; &nbsp;|&nbsp; &nbsp;</b>
+							<b style="align:center;">10:30&nbsp; &nbsp;|&nbsp; &nbsp;</b>
+							<b style="align:center;">13:20&nbsp; &nbsp;|&nbsp; &nbsp;</b>
+							<b style="align:center;">15:40&nbsp; &nbsp;|&nbsp; &nbsp;</b>
+							<b style="align:center;">21:20&nbsp; &nbsp;|&nbsp; &nbsp;</b>
+							<b style="align:center;">23:50</b>
+							<img src="../movie/images/moon.png" style="height:20px;  align:center;">
+						</li>
+					</ul>
+					</div>
+				</div>
+			<div class="row3">
+				<div align="left" class="row2" style="margin: 0; padding-right: 250px;">
+					<hr style="width:1150px;">
+						<b>
+							<img src="../movie/images/12year.png" style="height: 30px;">&nbsp;&nbsp;블랙 위도우&nbsp;&nbsp;<font color=blue>상영중&nbsp;&nbsp;</font>
+						</b>
+						<font size="2px">액션, 모험, SF/ 134분/ 2021.07.07개봉</font>
+				</div>
+					<div class="project-info overflow">
+					<ul class="elements">
+						<li><i class="fa fa-angle-right"></i>
+						<b>&nbsp;2D&nbsp;&nbsp;|&nbsp;&nbsp;1관&nbsp;&nbsp;|&nbsp;&nbsp;4F</b><br>
+						</li>
+					</ul>
+					<ul>
+						<li>
+							<b style="align:center;">08:40</b>&nbsp; &nbsp;
+							<img src="../movie/images/sun.png" style="height:20px;  align:center;"><b>&nbsp; &nbsp;|&nbsp; &nbsp;</b>
+							<b style="align:center;">10:30&nbsp; &nbsp;|&nbsp; &nbsp;</b>
+							<b style="align:center;">13:20&nbsp; &nbsp;|&nbsp; &nbsp;</b>
+							<b style="align:center;">15:40&nbsp; &nbsp;|&nbsp; &nbsp;</b>
+							<b style="align:center;">21:20&nbsp; &nbsp;|&nbsp; &nbsp;</b>
+							<b style="align:center;">23:50</b>
+							<img src="../movie/images/moon.png" style="height:20px;  align:center;">
+						</li>
+					</ul>
+					<ul class="elements">
+						<li><i class="fa fa-angle-right"></i>
+						<b>&nbsp;2D&nbsp;&nbsp;|&nbsp;&nbsp;2관&nbsp;&nbsp;|&nbsp;&nbsp;7F</b><br>
+						</li>
+					</ul>
+					<ul>
+						<li>
+							<b style="align:center;">08:40</b>&nbsp; &nbsp;
+							<img src="../movie/images/sun.png" style="height:20px;  align:center;"><b>&nbsp; &nbsp;|&nbsp; &nbsp;</b>
+							<b style="align:center;">10:30&nbsp; &nbsp;|&nbsp; &nbsp;</b>
+							<b style="align:center;">13:20&nbsp; &nbsp;|&nbsp; &nbsp;</b>
+							<b style="align:center;">15:40&nbsp; &nbsp;|&nbsp; &nbsp;</b>
+							<b style="align:center;">21:20&nbsp; &nbsp;|&nbsp; &nbsp;</b>
+							<b style="align:center;">23:50</b>
 							<img src="../movie/images/moon.png" style="height:20px;  align:center;">
 						</li>
 					</ul>

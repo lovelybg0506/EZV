@@ -116,6 +116,13 @@ pre{
 					                
 					                Vector<SBoardBean> vec=bdao.getAllBoard(startRow, endRow);
 					                
+					                SBoardBean empty = new SBoardBean();
+					                empty.setContent("");
+					                empty.setSubject("");
+					                vec.add(empty);
+					                vec.add(empty);
+					                vec.add(empty);
+					                
 							        SBoardBean bean1=vec.get(0);
 							        SBoardBean bean2=vec.get(1);
 							        SBoardBean bean3=vec.get(2);

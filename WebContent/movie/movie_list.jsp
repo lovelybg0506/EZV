@@ -55,12 +55,12 @@
                                     <div class="portfolio-view">
                                         <ul class="nav nav-pills">
                                         	<li><button type="button" class="btn btn-sm" onclick ="location.href='../movie/movie_Detail.jsp?mno=<%=mlist.get(i).getMno()%>'">상세보기</button></li><br><br>
+                                        	<li><button type="button" class="btn btn-sm" onclick ="location.href='../reservation/reservationView.jsp'">예매하기</button></li><br><br>
                                         </ul>
                                     </div>
                                 </div>
                                 <div class="portfolio-info ">
                                     <h2><%=mlist.get(i).getMname() %></h2>
-                                    <h5>예매율: 20%</h5>
                                     <h5><%=mlist.get(i).getMdate() %></h5>
                                 </div>
                             </div>

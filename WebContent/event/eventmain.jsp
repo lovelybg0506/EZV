@@ -34,40 +34,24 @@
    </section>
 <!--주제 -->
 <%
-    EBoardDAO bdao=new EBoardDAO();
-	int count=bdao.getAllCount();
-	EBoardBean bean1=null;
-	EBoardBean bean2=null;
-	EBoardBean bean3=null;
-	EBoardBean bean4=null;
-	
-	Vector<EBoardBean> vec=null;
-	
-	switch(count){
-	case 1:
-		vec=bdao.getAllBoard(1, 1);
-		bean1=vec.get(0);
-		break;
-	case 2:
-		vec=bdao.getAllBoard(1, 2);
-		bean1=vec.get(0);
-		bean2=vec.get(1);
-		break;
-	case 3:
-		vec=bdao.getAllBoard(1, 3);
-		bean1=vec.get(0);
-		bean2=vec.get(1);
-		bean3=vec.get(2);
-		break;
-	case 4:
-		vec=bdao.getAllBoard(1, 4);
-		bean1=vec.get(0);
-		bean2=vec.get(1);
-		bean3=vec.get(2);
-		bean4=vec.get(3);
-		break;
-		
-	}
+EBoardDAO bdao=new EBoardDAO();
+Vector<EBoardBean> vec=bdao.getAllBoard(1, 4);
+
+EBoardBean empty = new EBoardBean();
+empty.setFileName("");
+empty.setTitle("");
+empty.setSubtitle("");
+empty.setContent("");
+empty.setTerm("");
+
+vec.add(empty);
+vec.add(empty);
+vec.add(empty);
+
+EBoardBean bean1=vec.get(0);
+EBoardBean bean2=vec.get(1);
+EBoardBean bean3=vec.get(2);
+EBoardBean bean4=vec.get(3);
     
 %>
 <section id="blog" class="padding-bottom">

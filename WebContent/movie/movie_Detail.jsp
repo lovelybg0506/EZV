@@ -98,7 +98,7 @@
 						</div>
 						<div class="live-preview">
 						    <c:if test="${loginUser!=null }">
-								<a href="../resveration/ResverationForm.jsp" class="btn btn-common uppercase" >예매하기</a>
+								<a href="../reservation/reservationView.jsp" class="btn btn-common uppercase" >예매하기</a>
 							</c:if>
 						</div>
 					</div>
